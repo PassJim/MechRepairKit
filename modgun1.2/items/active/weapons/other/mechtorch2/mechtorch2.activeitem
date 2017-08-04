@@ -1,32 +1,41 @@
 {
-  "itemName" : "industrialmechtorch",
-  "price" : 2500,
-  "inventoryIcon" : "industrialmechtorch.png:wooden.1",
+  "itemName" : "mechtorch2",
+  "level" : 1,
+  "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Launches interchangeable bolts by magnetic force.",
-  "shortdescription" : "Adaptable Crossbow",
-  "level" : 4,
+  "description" : "Repairs your mech2",
+  "shortdescription" : "Mech Welder2",
   "tooltipKind" : "gun",
-  "category" : "assaultRifle",
-  "itemTags" : ["weapon","ranged","rifle","upgradeableWeapon"],
+  "category" : "pistol",
   "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","pistol"],
+
+  "inventoryIcon" : "mechtorch2.png",
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "industrialmechtorch.png",
+    "middle" : "mechtorch2.png",
     "barrel" : "",
     "muzzleFlash" : ""
   },
   "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
+      }
+    },
     "sounds" : {
-      "fire" : [ "/sfx/gun/crossbow1.ogg" ]
+      "fire" : [ "/sfx/gun/impact_plasma.ogg" ]
     }
   },
-
-  "baseOffset" : [0.5, 0.0],
-  "muzzleOffset" : [1.875, 0.125],
+  "baseOffset" : [0.75, 0.125],
+  "muzzleOffset" : [1.0, 1.125],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -36,18 +45,17 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 1.0,
-    "baseDps" : 8,
-    "energyUsage" : 24,
-    "inaccuracy" : 0.008,
-
+    "fireTime" : 0.8250,
+    "baseDps" : 0.25,
+    "energyUsage" : 20.0,
+    "inaccuracy" : 0.00,
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "woodenbolt",
+    "projectileType" : "mechweld2",
     "projectileParameters" : {
-      "knockback" : 20
-    },
+	},
+
     "stances" : {
       "idle" : {
         "armRotation" : 0,
@@ -59,24 +67,24 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-        "twoHanded" : true,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : true
       },
       "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : true
       }
     }
   },
 
-  "altAbilityType" : "adaptableammo",
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+"builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

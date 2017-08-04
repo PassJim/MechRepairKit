@@ -1,7 +1,4 @@
 [
-{
-"op":"add",
-"path":"/defaultBlueprints/tier1/-",
-"value":{"item":"mechtorch"}
-}
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"mechtorch"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"mechtorch2"}}
 ]
