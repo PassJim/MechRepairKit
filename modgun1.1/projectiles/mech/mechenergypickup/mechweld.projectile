@@ -1,0 +1,29 @@
+{
+  "projectileName" : "mechweld",
+  "physics" : "illusion",
+  "bounces" : 0,
+  "image" : "mechweld.png",
+  "fullbright" : true,
+  "lightColor" : [0, 50, 100],
+  "animationCycle" : 0.50,
+  "frameNumber" : 7,
+  "power" : 0.0,
+  "speed" : 10,
+  "actionOnReap" : [],
+  "onlyHitTerrain" : true,
+
+  "orientationLocked" : true,
+
+  "timeToLive" : 0.75,
+
+  "scripts" : ["mechweldenergypickup.lua"],
+  "scriptDelta" : 10,
+
+  "pickupRange" : 2,
+  "snapRange" : 15,
+  "snapSpeed" : 150,
+  "snapForce" : 250,
+
+  "restoreBase" : 40,
+  "restorePercentage" : 0
+}
