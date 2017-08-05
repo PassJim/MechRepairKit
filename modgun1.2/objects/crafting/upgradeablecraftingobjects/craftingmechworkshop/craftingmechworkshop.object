@@ -55,7 +55,7 @@
       },
 
       "interactData" : {
-        "config" : "/interface/windowconfig/craftingmechworkshop.config",
+        "config" : "/interface/windowconfig/craftmechworkshop.config",
         "paneLayoutOverride" : {
           "windowtitle" : {
             "title" : " Wooden Workbench",
@@ -101,7 +101,7 @@
       },
 
       "interactData" : {
-        "config" : "/interface/windowconfig/craftingmechworkshop.config",
+        "config" : "/interface/windowconfig/craftmechworkshop.config",
         "paneLayoutOverride" : {
           "windowtitle" : {
             "title" : " Industrial Workbench",
