@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 500 }
+  ],
+  "output" : {
+    "item" : "craftingmechworkshop",
+    "count" : 1
+  },
+  "groups" : [ "plain", "objects", "all", "tools" ]
+}
