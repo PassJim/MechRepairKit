@@ -1,0 +1,1392 @@
+[13:43:14.615] [Info] Root: Preparing Root...
+[13:43:14.616] [Info] Root: Done preparing Root.
+[13:43:14.616] [Info] Client Version 1.3.2 (windows x86_64) Source ID: 4d70cfed23093a8e5abe06d662c6a5610fefc596 Protocol: 743
+[13:43:14.616] [Info] Root: Scanning for asset sources in directory '..\assets\'
+[13:43:15.177] [Info] Root: Scanning for asset sources in directory '..\mods\'
+[13:43:15.177] [Warn] Root: Unrecognized file in asset directory 'ModPackHelper.log', skipping
+[13:43:15.177] [Warn] Root: Unrecognized file in asset directory 'StarboundModHelper.bat', skipping
+[13:43:15.179] [Warn] Root: Unrecognized file in asset directory 'mods_go_here', skipping
+[13:43:15.181] [Info] Root: Detected asset source named 'base' at '..\assets\packed.pak'
+[13:43:15.181] [Info] Root: Detected asset source named 'Manipulated UI' at '..\mods\ManipulatedUI.pak'
+[13:43:15.181] [Info] Root: Detected asset source named 'Mech Welder' at '..\mods\modgun1.2'
+[13:43:15.181] [Info] Root: Detected asset source named 'SpawnableItemPack' at '..\mods\spawn.pak'
+[13:43:15.181] [Info] Root: Detected asset source named 'MMM' at '..\mods\matter.pak'
+[13:43:15.181] [Info] Root: Detected unnamed asset source at '..\assets\user'
+[13:43:15.181] [Info] Loading assets from: '..\assets\packed.pak'
+[13:43:15.874] [Info] Loading assets from: '..\mods\ManipulatedUI.pak'
+[13:43:15.875] [Info] Loading assets from: '..\mods\modgun1.2'
+[13:43:15.877] [Info] Loading assets from: '..\mods\spawn.pak'
+[13:43:15.879] [Info] Loading assets from: '..\mods\matter.pak'
+[13:43:15.879] [Info] Loading assets from: '..\assets\user'
+[13:43:16.564] [Info] Assets digest is 86234ee2701eed75e9a5d086f3f58e569dcc754cbc62a29fa5dbf4e5c987481c
+[13:43:16.564] [Info] Root: Loaded Assets in 1.94842 seconds
+[13:43:16.569] [Info] Application: Initializing SDL Video
+[13:43:16.595] [Info] Application: Initializing SDL Joystick
+[13:43:16.687] [Info] Application: Initializing SDL Sound
+[13:43:16.782] [Info] Failed to initialize Steam platform services
+[13:43:16.782] [Info] Application: No platform services available
+[13:43:16.782] [Info] Application: Creating SDL Window
+[13:43:17.076] [Info] Application: Enabling VSync with late swap tearing
+[13:43:17.142] [Info] Application: Opened default audio device with 44.1khz / 16 bit stereo audio, 2048 sample size buffer
+[13:43:17.149] [Info] OpenGL version: '4.5.13476 Compatibility Profile Context 22.19.171.1' vendor: 'ATI Technologies Inc.' renderer: 'AMD Radeon (TM) R9 380 Series' shader: '4.50'
+[13:43:17.150] [Info] Application: initialization...
+[13:43:17.151] [Info] Root: Loaded Configuration in 0.00107473 seconds
+[13:43:17.154] [Info] Application: renderer initialization...
+[13:43:17.156] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:43:17.156] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:43:17.158] [Info] Root: Loaded ImageMetadataDatabase in 2.79273e-06 seconds
+[13:43:17.183] [Info] Application: main update loop...
+[13:43:17.202] [Info] Root: Loaded NameGenerator in 0.0120743 seconds
+[13:43:17.349] [Info] Root: Loaded PlantDatabase in 0.147046 seconds
+[13:43:17.537] [Info] Root: Loaded ObjectDatabase in 0.347694 seconds
+[13:43:17.767] [Info] Root: Loaded MonsterDatabase in 0.229364 seconds
+[13:43:17.810] [Info] Root: Loaded NpcDatabase in 0.0426472 seconds
+[13:43:17.811] [Info] Root: Loaded StagehandDatabase in 0.00103354 seconds
+[13:43:17.814] [Info] Root: Loaded VehicleDatabase in 0.00376227 seconds
+[13:43:18.074] [Error] Exception caught loading asset: /player.config, (AssetException) Could not read JSON asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff828cfc220 _C_specific_handler
+[6] 7ff828cf29b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779edfe1b Star::Assets::getAsset
+[19] 7ff779ee0dd2 Star::Assets::json
+[20] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[21] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[22] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[23] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[24] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[25] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[26] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[27] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[28] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[29] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[30] 7ff77a280cd2 Star::Root::playerFactory
+[31] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[32] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[33] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[34] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[35] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[36] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[37] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[38] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[39] 7ff779ec3c5e Star::ThreadImpl::runThread
+[40] 7ff82f0a2774 BaseThreadInitThunk
+[41] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff828cfc220 _C_specific_handler
+[6] 7ff828cf29b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee43f6 Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779edfe1b Star::Assets::getAsset
+[20] 7ff779ee0dd2 Star::Assets::json
+[21] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[22] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[23] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[24] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[25] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[26] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[27] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[28] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[29] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[30] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[31] 7ff77a280cd2 Star::Root::playerFactory
+[32] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[33] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[34] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[35] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[36] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[37] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[38] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[39] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[40] 7ff779ec3c5e Star::ThreadImpl::runThread
+[41] 7ff82f0a2774 BaseThreadInitThunk
+[42] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: unexpected character parsing word at 5:1
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee43f6 Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779edfe1b Star::Assets::getAsset
+[15] 7ff779ee0dd2 Star::Assets::json
+[16] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[17] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[18] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[19] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[20] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[21] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[22] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[23] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[24] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[25] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[26] 7ff77a280cd2 Star::Root::playerFactory
+[27] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[28] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[29] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[30] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[31] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[32] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[33] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[34] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[35] 7ff779ec3c5e Star::ThreadImpl::runThread
+[36] 7ff82f0a2774 BaseThreadInitThunk
+[37] 7ff831a20d51 RtlUserThreadStart
+[13:43:18.175] [Info] Root: Loaded ProjectileDatabase in 0.825939 seconds
+[13:43:18.236] [Info] Root: Loaded ParticleDatabase in 0.0615044 seconds
+[13:43:18.460] [Info] Root: Loaded MaterialDatabase in 0.285303 seconds
+[13:43:19.918] [Info] Root: Loaded CodexDatabase in 0.00432174 seconds
+[13:43:19.935] [Info] Root: Loaded FunctionDatabase in 0.00832488 seconds
+[13:43:20.016] [Error] Exception caught loading asset: /player.config:beamGunConfig, (AssetException) Could not read JSON asset /player.config:beamGunConfig
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff828cfc220 _C_specific_handler
+[6] 7ff828cf29b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779edfe1b Star::Assets::getAsset
+[19] 7ff779ee0dd2 Star::Assets::json
+[20] 7ff77a4b60a4 Star::BeamItem::BeamItem
+[21] 7ff77a4eacfb Star::ObjectItem::ObjectItem
+[22] 7ff77a051d36 std::make_shared<Star::ObjectItem,Star::Json const & __ptr64,Star::String const & __ptr64,Star::Json const & __ptr64>
+[23] 7ff77a05b1ad Star::ItemDatabase::createItem
+[24] 7ff77a05d73e Star::ItemDatabase::item
+[25] 7ff77a05f20a Star::ItemDatabase::parseRecipe
+[26] 7ff77a060808 Star::ItemDatabase::scanRecipes
+[27] 7ff77a0537bf Star::ItemDatabase::ItemDatabase
+[28] 7ff77a2745b5 std::make_shared<Star::ItemDatabase>
+[29] 7ff77a279e39 <lambda_c979fe2661440bde921b022a5da87f15>::operator()
+[30] 7ff77a26b24f std::_Invoker_functor::_Call<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[31] 7ff77a26f026 std::invoke<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[32] 7ff77a26c8e9 std::_Invoke_ret<std::shared_ptr<Star::ItemDatabase>,<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[33] 7ff77a27bc46 std::_Func_impl<<lambda_c979fe2661440bde921b022a5da87f15>,std::allocator<int>,std::shared_ptr<Star::ItemDatabase> >::_Do_call
+[34] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[35] 7ff77a2711b3 Star::Root::loadMemberFunction<Star::ItemDatabase>
+[36] 7ff77a26f5f9 Star::Root::loadMember<Star::ItemDatabase>
+[37] 7ff77a2806a2 Star::Root::itemDatabase
+[38] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[39] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[40] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[41] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[42] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[43] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[44] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[45] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[46] 7ff779ec3c5e Star::ThreadImpl::runThread
+[47] 7ff82f0a2774 BaseThreadInitThunk
+[48] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff828cfc220 _C_specific_handler
+[6] 7ff828cf29b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee43f6 Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779edfe1b Star::Assets::getAsset
+[20] 7ff779ee0dd2 Star::Assets::json
+[21] 7ff77a4b60a4 Star::BeamItem::BeamItem
+[22] 7ff77a4eacfb Star::ObjectItem::ObjectItem
+[23] 7ff77a051d36 std::make_shared<Star::ObjectItem,Star::Json const & __ptr64,Star::String const & __ptr64,Star::Json const & __ptr64>
+[24] 7ff77a05b1ad Star::ItemDatabase::createItem
+[25] 7ff77a05d73e Star::ItemDatabase::item
+[26] 7ff77a05f20a Star::ItemDatabase::parseRecipe
+[27] 7ff77a060808 Star::ItemDatabase::scanRecipes
+[28] 7ff77a0537bf Star::ItemDatabase::ItemDatabase
+[29] 7ff77a2745b5 std::make_shared<Star::ItemDatabase>
+[30] 7ff77a279e39 <lambda_c979fe2661440bde921b022a5da87f15>::operator()
+[31] 7ff77a26b24f std::_Invoker_functor::_Call<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[32] 7ff77a26f026 std::invoke<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[33] 7ff77a26c8e9 std::_Invoke_ret<std::shared_ptr<Star::ItemDatabase>,<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[34] 7ff77a27bc46 std::_Func_impl<<lambda_c979fe2661440bde921b022a5da87f15>,std::allocator<int>,std::shared_ptr<Star::ItemDatabase> >::_Do_call
+[35] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[36] 7ff77a2711b3 Star::Root::loadMemberFunction<Star::ItemDatabase>
+[37] 7ff77a26f5f9 Star::Root::loadMember<Star::ItemDatabase>
+[38] 7ff77a2806a2 Star::Root::itemDatabase
+[39] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[40] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[41] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[42] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[43] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[44] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[45] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[46] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[47] 7ff779ec3c5e Star::ThreadImpl::runThread
+[48] 7ff82f0a2774 BaseThreadInitThunk
+[49] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: unexpected character parsing word at 5:1
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee43f6 Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779edfe1b Star::Assets::getAsset
+[15] 7ff779ee0dd2 Star::Assets::json
+[16] 7ff77a4b60a4 Star::BeamItem::BeamItem
+[17] 7ff77a4eacfb Star::ObjectItem::ObjectItem
+[18] 7ff77a051d36 std::make_shared<Star::ObjectItem,Star::Json const & __ptr64,Star::String const & __ptr64,Star::Json const & __ptr64>
+[19] 7ff77a05b1ad Star::ItemDatabase::createItem
+[20] 7ff77a05d73e Star::ItemDatabase::item
+[21] 7ff77a05f20a Star::ItemDatabase::parseRecipe
+[22] 7ff77a060808 Star::ItemDatabase::scanRecipes
+[23] 7ff77a0537bf Star::ItemDatabase::ItemDatabase
+[24] 7ff77a2745b5 std::make_shared<Star::ItemDatabase>
+[25] 7ff77a279e39 <lambda_c979fe2661440bde921b022a5da87f15>::operator()
+[26] 7ff77a26b24f std::_Invoker_functor::_Call<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[27] 7ff77a26f026 std::invoke<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[28] 7ff77a26c8e9 std::_Invoke_ret<std::shared_ptr<Star::ItemDatabase>,<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[29] 7ff77a27bc46 std::_Func_impl<<lambda_c979fe2661440bde921b022a5da87f15>,std::allocator<int>,std::shared_ptr<Star::ItemDatabase> >::_Do_call
+[30] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[31] 7ff77a2711b3 Star::Root::loadMemberFunction<Star::ItemDatabase>
+[32] 7ff77a26f5f9 Star::Root::loadMember<Star::ItemDatabase>
+[33] 7ff77a2806a2 Star::Root::itemDatabase
+[34] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[35] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[36] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[37] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[38] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[39] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[40] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[41] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[42] 7ff779ec3c5e Star::ThreadImpl::runThread
+[43] 7ff82f0a2774 BaseThreadInitThunk
+[44] 7ff831a20d51 RtlUserThreadStart
+[13:43:20.026] [Error] Could not instantiate item '[reeddoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.037] [Error] Could not load recipe /recipes/biome/oasis/reeddoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.047] [Error] Could not instantiate item '[movingsunflower, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.058] [Error] Could not load recipe /recipes/biome/spring/movingsunflower.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.070] [Error] Could not instantiate item '[perfectlygenericitem, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.081] [Error] Could not load recipe /recipes/treasuredtrophies/perfectlygenericitem.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.090] [Error] Could not instantiate item '[bonechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.101] [Error] Could not load recipe /recipes/biome/bone/bonechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.111] [Error] Could not instantiate item '[temple4, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.122] [Error] Could not load recipe /recipes/furniture1/materials/temple4.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.131] [Error] Could not instantiate item '[toxicchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.142] [Error] Could not load recipe /recipes/biome/toxic/toxicchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.152] [Error] Could not instantiate item '[stonedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.163] [Error] Could not load recipe /recipes/biome/alpine/stonedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.173] [Error] Could not instantiate item '[delay, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.183] [Error] Could not load recipe /recipes/wiringstation/logic/delay.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.193] [Error] Could not instantiate item '[woodenbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.204] [Error] Could not load recipe /recipes/furniture1/beds/woodenbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.215] [Error] Could not instantiate item '[concretematerial, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.226] [Error] Could not load recipe /recipes/furniture1/materials/concrete.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.236] [Error] Could not instantiate item '[woodtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.247] [Error] Could not load recipe /recipes/furniture1/decorative/woodtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.257] [Error] Could not instantiate item '[teddybearplush, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.267] [Error] Could not load recipe /recipes/spinningwheel/objects/teddybearplush.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.277] [Error] Could not instantiate item '[prismchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.288] [Error] Could not load recipe /recipes/biome/prism/prismchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.299] [Error] Could not instantiate item '[castlewalls1, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.309] [Error] Could not load recipe /recipes/furniture1/materials/castlewalls1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.327] [Error] Could not instantiate item '[terraformeralien, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.338] [Error] Could not load recipe /recipes/terraforge/terraformeralien.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.349] [Error] Could not instantiate item '[terraformerdesert, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.360] [Error] Could not load recipe /recipes/terraforge/terraformerdesert.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.369] [Error] Could not instantiate item '[darkwoodmaterial, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.380] [Error] Could not load recipe /recipes/emptyhands/darkwoodmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.390] [Error] Could not instantiate item '[slopedhullpanel, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.401] [Error] Could not load recipe /recipes/furniture2/materials/slopedhullpanel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.411] [Error] Could not instantiate item '[chain, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.422] [Error] Could not load recipe /recipes/furniture2/materials/chain.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.432] [Error] Could not instantiate item '[standingturret, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.443] [Error] Could not load recipe /recipes/wiringstation/mechanics/standingturret.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.453] [Error] Could not instantiate item '[craftingmedical, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.463] [Error] Could not load recipe /recipes/inventorstable1/craftingmedical.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.474] [Error] Could not instantiate item '[acceleratoraddon, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.483] [Error] Could not load recipe /recipes/inventorstable3/acceleratoraddon.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.496] [Error] Could not instantiate item '[apexshipdetails, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.507] [Error] Could not load recipe /recipes/furniture1/materials/apexshipdetails.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.521] [Error] Could not instantiate item '[pressurisedbeam, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.532] [Error] Could not load recipe /recipes/furniture2/materials/pressurisedbeam.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.543] [Error] Could not instantiate item '[fancysnowman, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.553] [Error] Could not load recipe /recipes/biome/snow/fancysnowman.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.563] [Error] Could not instantiate item '[glassmaterial, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.574] [Error] Could not load recipe /recipes/furniture1/materials/glassmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.585] [Error] Could not instantiate item '[bonematerial, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.596] [Error] Could not load recipe /recipes/furniture1/materials/bonematerial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.605] [Error] Could not instantiate item '[woodpanelling, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.616] [Error] Could not load recipe /recipes/furniture1/materials/woodpanelling.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.628] [Error] Could not instantiate item '[scorchedcitytable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.638] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitytable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.654] [Error] Could not instantiate item '[redcandycane1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.664] [Error] Could not load recipe /recipes/holidaycraftingtable/redcandycane1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.674] [Error] Could not instantiate item '[bars, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.685] [Error] Could not load recipe /recipes/furniture1/materials/bars.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.699] [Error] Could not instantiate item '[bigpresent, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.710] [Error] Could not load recipe /recipes/holidaycraftingtable/bigpresent.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.719] [Error] Could not instantiate item '[rainbowtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.730] [Error] Could not load recipe /recipes/biome/colourful/rainbowtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.739] [Error] Could not instantiate item '[flowerlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.750] [Error] Could not load recipe /recipes/biome/spring/flowerlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.763] [Error] Could not instantiate item '[secretdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.774] [Error] Could not load recipe /recipes/wiringstation/mechanics/secretdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.791] [Error] Could not instantiate item '[pressuriseddurasteel, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.802] [Error] Could not load recipe /recipes/furniture2/materials/pressuriseddurasteel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.812] [Error] Could not instantiate item '[reeddesk, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.823] [Error] Could not load recipe /recipes/biome/oasis/reeddesk.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.832] [Error] Could not instantiate item '[fossildisplay1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.843] [Error] Could not load recipe /recipes/fossilstation/fossildisplay1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.853] [Error] Could not instantiate item '[woodenplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.864] [Error] Could not load recipe /recipes/furniture1/materials/woodenplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.875] [Error] Could not instantiate item '[present2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.886] [Error] Could not load recipe /recipes/holidaycraftingtable/present2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.900] [Error] Could not instantiate item '[fadedblocks, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.911] [Error] Could not load recipe /recipes/furniture1/materials/fadedblocks.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.924] [Error] Could not instantiate item '[lightsensor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.935] [Error] Could not load recipe /recipes/wiringstation/sensors/lightsensor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.945] [Error] Could not instantiate item '[drain, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.956] [Error] Could not load recipe /recipes/wiringstation/mechanics/drain.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.965] [Error] Could not instantiate item '[pixelcompressor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:20.977] [Error] Could not load recipe /recipes/inventorstable3/pixelcompressor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.000] [Error] Could not instantiate item '[brassteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.011] [Error] Could not load recipe /recipes/teleporterstore/brassteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.020] [Error] Could not instantiate item '[woodenchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.031] [Error] Could not load recipe /recipes/furniture1/decorative/woodenchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.041] [Error] Could not instantiate item '[fullwood1, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.052] [Error] Could not load recipe /recipes/furniture1/materials/fullwood1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.062] [Error] Could not instantiate item '[rustyrail, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.073] [Error] Could not load recipe /recipes/rails/rustyrail.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.087] [Error] Could not instantiate item '[sprinkler, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.098] [Error] Could not load recipe /recipes/farmtable2/farming/sprinkler.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.108] [Error] Could not instantiate item '[ruinsplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.118] [Error] Could not load recipe /recipes/furniture1/materials/ruinsplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.129] [Error] Could not instantiate item '[celltable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.140] [Error] Could not load recipe /recipes/biome/cell/celltable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.149] [Error] Could not instantiate item '[mothtrap, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.160] [Error] Could not load recipe /recipes/farmtable1/farming/mothtrap.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.171] [Error] Could not instantiate item '[fridge, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.181] [Error] Could not load recipe /recipes/furniture2/storage/fridge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.194] [Error] Could not instantiate item '[chain, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.205] [Error] Could not load recipe /recipes/furniture2/materials/blueneonsymbol.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.215] [Error] Could not instantiate item '[celllamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.225] [Error] Could not load recipe /recipes/biome/cell/celllamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.235] [Error] Could not instantiate item '[terraformerforest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.246] [Error] Could not load recipe /recipes/terraforge/terraformerforest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.258] [Error] Could not instantiate item '[greencandycane2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.268] [Error] Could not load recipe /recipes/holidaycraftingtable/greencandycane2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.279] [Error] Could not instantiate item '[railsensor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.289] [Error] Could not load recipe /recipes/rails/railsensor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.299] [Error] Could not instantiate item '[swampybed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.310] [Error] Could not load recipe /recipes/biome/swamp/swampybed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.322] [Error] Could not instantiate item '[steamspringbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.333] [Error] Could not load recipe /recipes/biome/steamspring/steamspringbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.343] [Error] Could not instantiate item '[giantbells, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.354] [Error] Could not load recipe /recipes/holidaycraftingtable/giantbells.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.365] [Error] Could not instantiate item '[tier4bed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.376] [Error] Could not load recipe /recipes/furniture2/beds/tier4bed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.386] [Error] Could not instantiate item '[prismdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.397] [Error] Could not load recipe /recipes/biome/prism/prismdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.407] [Error] Could not instantiate item '[swampchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.418] [Error] Could not load recipe /recipes/biome/swamp/swampchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.428] [Error] Could not instantiate item '[rusttable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.439] [Error] Could not load recipe /recipes/biome/rust/rusttable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.448] [Error] Could not instantiate item '[woodengate, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.459] [Error] Could not load recipe /recipes/furniture1/doors/woodengate.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.469] [Error] Could not instantiate item '[fleshtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.480] [Error] Could not load recipe /recipes/biome/flesh/fleshtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.491] [Error] Could not instantiate item '[rustdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.501] [Error] Could not load recipe /recipes/biome/rust/rustdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.511] [Error] Could not instantiate item '[lunarbasecrate, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.522] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbasecrate.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.534] [Error] Could not instantiate item '[purplegumdrop2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.545] [Error] Could not load recipe /recipes/holidaycraftingtable/purplegumdrop2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.555] [Error] Could not instantiate item '[slopedrustypanel, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.566] [Error] Could not load recipe /recipes/furniture2/materials/slopedrustypanel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.574] [Info] Root: Writing runtime configuration to '..\storage\starbound.config'
+[13:43:21.583] [Error] Could not instantiate item '[woodencrate2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.594] [Error] Could not load recipe /recipes/furniture1/storage/woodencrate2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.604] [Error] Could not instantiate item '[giantsnowflake, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.614] [Error] Could not load recipe /recipes/holidaycraftingtable/giantsnowflake.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.624] [Error] Could not instantiate item '[greengumdrop1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.634] [Error] Could not load recipe /recipes/holidaycraftingtable/greengumdrop1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.644] [Error] Could not instantiate item '[apexshipwall, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.655] [Error] Could not load recipe /recipes/furniture1/materials/apexshipwall.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.669] [Error] Could not instantiate item '[flaghuman, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.679] [Error] Could not load recipe /recipes/emptyhands/flaghuman.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.688] [Error] Could not instantiate item '[scienceteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.699] [Error] Could not load recipe /recipes/teleporterstore/scienceteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.710] [Error] Could not instantiate item '[giantbow1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.720] [Error] Could not load recipe /recipes/holidaycraftingtable/giantbow1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.732] [Error] Could not instantiate item '[tarman, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.742] [Error] Could not load recipe /recipes/biome/tar/tarman.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.752] [Error] Could not instantiate item '[foundrydoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.763] [Error] Could not load recipe /recipes/biome/foundry/foundrydoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.774] [Error] Could not instantiate item '[lightmetal, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.784] [Error] Could not load recipe /recipes/furniture2/materials/lightmetal.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.798] [Error] Could not instantiate item '[redgumdrop1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.809] [Error] Could not load recipe /recipes/holidaycraftingtable/redgumdrop1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.819] [Error] Could not instantiate item '[foundrybed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.830] [Error] Could not load recipe /recipes/biome/foundry/foundrybed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.840] [Error] Could not instantiate item '[timer, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.851] [Error] Could not load recipe /recipes/wiringstation/logic/timer.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.860] [Error] Could not instantiate item '[geodehighanote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.871] [Error] Could not load recipe /recipes/biome/geode/geodehighanote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.880] [Error] Could not instantiate item '[swampchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.891] [Error] Could not load recipe /recipes/biome/swamp/swampchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.905] [Error] Could not instantiate item '[steamspringtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.916] [Error] Could not load recipe /recipes/biome/steamspring/steamspringtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.926] [Error] Could not instantiate item '[woodendoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.937] [Error] Could not load recipe /recipes/furniture1/doors/woodendoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.947] [Error] Could not instantiate item '[scanner, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.957] [Error] Could not load recipe /recipes/wiringstation/sensors/scanner.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.967] [Error] Could not instantiate item '[terraformertundra, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.977] [Error] Could not load recipe /recipes/terraforge/terraformertundra.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.987] [Error] Could not instantiate item '[tombbrick3, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:21.997] [Error] Could not load recipe /recipes/furniture1/materials/tombbrick3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.009] [Error] Could not instantiate item '[rooftiles, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.020] [Error] Could not load recipe /recipes/furniture1/materials/rooftiles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.035] [Error] Could not instantiate item '[capturestation, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.045] [Error] Could not load recipe /recipes/inventorstable3/capturestation.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.055] [Error] Could not instantiate item '[icemachine, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.066] [Error] Could not load recipe /recipes/biome/ice/icemachine.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.075] [Error] Could not instantiate item '[smoothmetal, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.086] [Error] Could not load recipe /recipes/furniture2/materials/smoothmetal.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.096] [Error] Could not instantiate item '[floranstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.107] [Error] Could not load recipe /recipes/furniture2/storage/floranstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.118] [Error] Could not instantiate item '[woodsupport, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.129] [Error] Could not load recipe /recipes/furniture1/decorative/woodsupport.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.138] [Error] Could not instantiate item '[baseboard, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.149] [Error] Could not load recipe /recipes/furniture1/materials/baseboard.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.158] [Error] Could not instantiate item '[ornateflooring, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.169] [Error] Could not load recipe /recipes/furniture1/materials/ornateflooring.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.187] [Error] Could not instantiate item '[tier2light, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.197] [Error] Could not load recipe /recipes/furniture1/lights/tier2light.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.207] [Error] Could not instantiate item '[lunarbaseplatform, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.217] [Error] Could not load recipe /recipes/furniture2/materials/lunarbaseplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.231] [Error] Could not instantiate item '[geodeplantpot, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.241] [Error] Could not load recipe /recipes/biome/geode/geodeplantpot.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.253] [Error] Could not instantiate item '[tinywallbutton, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.263] [Error] Could not load recipe /recipes/wiringstation/switches/tinywallbutton.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.278] [Error] Could not instantiate item '[crystaltable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.288] [Error] Could not load recipe /recipes/biome/crystal/crystaltable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.304] [Error] Could not instantiate item '[cobblestonebrick, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.314] [Error] Could not load recipe /recipes/furniture1/materials/cobblestonebrick.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.324] [Error] Could not instantiate item '[lunarbaseblock, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.335] [Error] Could not load recipe /recipes/furniture2/materials/lunarbaseblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.345] [Error] Could not instantiate item '[woodenverticaldoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.356] [Error] Could not load recipe /recipes/furniture1/doors/woodenverticaldoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.366] [Error] Could not instantiate item '[castlewalls2, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.376] [Error] Could not load recipe /recipes/furniture1/materials/castlewalls2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.386] [Error] Could not instantiate item '[petalfountain, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.396] [Error] Could not load recipe /recipes/biome/spring/petalfountain.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.406] [Error] Could not instantiate item '[miningdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.416] [Error] Could not load recipe /recipes/mission/lunarbase/miningdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.427] [Error] Could not instantiate item '[flagfloran, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.438] [Error] Could not load recipe /recipes/emptyhands/flagfloran.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.447] [Error] Could not instantiate item '[tier3light, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.458] [Error] Could not load recipe /recipes/furniture2/lights/tier3light.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.468] [Error] Could not instantiate item '[glitchshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.478] [Error] Could not load recipe /recipes/furniture2/doors/glitchshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.488] [Error] Could not instantiate item '[rustyblock, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.498] [Error] Could not load recipe /recipes/furniture1/materials/rustyblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.509] [Error] Could not instantiate item '[shroomlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.520] [Error] Could not load recipe /recipes/biome/mushroom/shroomlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.530] [Error] Could not instantiate item '[petalblock, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.541] [Error] Could not load recipe /recipes/furniture1/materials/petalblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.551] [Error] Could not instantiate item '[persistentswitch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.562] [Error] Could not load recipe /recipes/wiringstation/switches/persistentswitch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.573] [Error] Could not instantiate item '[miningverticaldoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.583] [Error] Could not load recipe /recipes/mission/lunarbase/miningverticaldoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.594] [Error] Could not instantiate item '[alientable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.605] [Error] Could not load recipe /recipes/biome/alien/alientable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.623] [Error] Could not instantiate item '[aztectech, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.634] [Error] Could not load recipe /recipes/furniture2/materials/aztectech.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.644] [Error] Could not instantiate item '[giantsanta, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.655] [Error] Could not load recipe /recipes/holidaycraftingtable/giantsanta.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.669] [Error] Could not instantiate item '[geodelowanote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.681] [Error] Could not load recipe /recipes/biome/geode/geodelowanote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.692] [Error] Could not instantiate item '[cavechest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.706] [Error] Could not load recipe /recipes/biome/stonecave/cavechest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.716] [Error] Could not instantiate item '[tier3table, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.728] [Error] Could not load recipe /recipes/furniture2/decorative/tier3table.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.739] [Error] Could not instantiate item '[wiringstation, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.749] [Error] Could not load recipe /recipes/inventorstable3/wiringstation.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.759] [Error] Could not instantiate item '[inventorstable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.770] [Error] Could not load recipe /recipes/emptyhands/inventorstable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.780] [Error] Could not instantiate item '[ledgebrick, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.790] [Error] Could not load recipe /recipes/furniture1/materials/ledgebrick.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.801] [Error] Could not instantiate item '[flagnovakid, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.811] [Error] Could not load recipe /recipes/emptyhands/flagnovakid.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.822] [Error] Could not instantiate item '[foundrylight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.832] [Error] Could not load recipe /recipes/biome/foundry/foundrylight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.844] [Error] Could not instantiate item '[hivetable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.855] [Error] Could not load recipe /recipes/biome/hive/hivetable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.867] [Error] Could not instantiate item '[redcandycane2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.876] [Error] Could not load recipe /recipes/holidaycraftingtable/redcandycane2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.887] [Error] Could not instantiate item '[3dprinter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.898] [Error] Could not load recipe /recipes/inventorstable3/3dprinter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.910] [Error] Could not instantiate item '[ornatetiles, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.920] [Error] Could not load recipe /recipes/furniture1/materials/ornatetiles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.931] [Error] Could not instantiate item '[humanshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.942] [Error] Could not load recipe /recipes/furniture2/doors/humanshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.953] [Error] Could not instantiate item '[woodencookingtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.963] [Error] Could not load recipe /recipes/inventorstable1/woodencookingtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.974] [Error] Could not instantiate item '[thatch, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.986] [Error] Could not load recipe /recipes/furniture1/materials/thatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:22.998] [Error] Could not instantiate item '[shroombed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.009] [Error] Could not load recipe /recipes/biome/mushroom/shroombed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.020] [Error] Could not instantiate item '[airlockdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.031] [Error] Could not load recipe /recipes/mission/hylotlmission1/airlockdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.041] [Error] Could not instantiate item '[wreckplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.052] [Error] Could not load recipe /recipes/furniture1/materials/wreckplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.062] [Error] Could not instantiate item '[candyblock, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.073] [Error] Could not load recipe /recipes/furniture1/materials/candyblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.084] [Error] Could not instantiate item '[industrialcrate, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.095] [Error] Could not load recipe /recipes/furniture2/storage/industrialcanister.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.105] [Error] Could not instantiate item '[hivebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.116] [Error] Could not load recipe /recipes/biome/hive/hivebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.126] [Error] Could not instantiate item '[terraformermidnight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.137] [Error] Could not load recipe /recipes/terraforge/terraformermidnight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.146] [Error] Could not instantiate item '[present3, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.158] [Error] Could not load recipe /recipes/holidaycraftingtable/present3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.168] [Error] Could not instantiate item '[cavechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.178] [Error] Could not load recipe /recipes/biome/stonecave/cavechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.188] [Error] Could not instantiate item '[holidaypole, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.199] [Error] Could not load recipe /recipes/holidaycraftingtable/holidaypole.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.209] [Error] Could not instantiate item '[moderntable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.220] [Error] Could not load recipe /recipes/old/portable3dprinter/moderntable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.230] [Error] Could not instantiate item '[redtoyblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.241] [Error] Could not load recipe /recipes/furniture2/materials/redtoyblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.251] [Error] Could not instantiate item '[apexshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.262] [Error] Could not load recipe /recipes/furniture2/doors/apexshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.272] [Error] Could not instantiate item '[terraformergarden, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.283] [Error] Could not load recipe /recipes/terraforge/terraformergarden.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.294] [Error] Could not instantiate item '[lunarbaselantern, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.305] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbaselantern.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.316] [Error] Could not instantiate item '[slidingdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.327] [Error] Could not load recipe /recipes/old/portable3dprinter/slidingdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.336] [Error] Could not instantiate item '[industrialcomputer, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.348] [Error] Could not load recipe /recipes/furniture2/decorative/industrialcomputer.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.358] [Error] Could not instantiate item '[giantflowerchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.368] [Error] Could not load recipe /recipes/biome/giantflower/giantflowerchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.379] [Error] Could not instantiate item '[industrialbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.389] [Error] Could not load recipe /recipes/furniture2/beds/industrialbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.400] [Error] Could not instantiate item '[bonebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.410] [Error] Could not load recipe /recipes/biome/bone/bonebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.425] [Error] Could not instantiate item '[scorchedcitystoreshelf, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.436] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitystoreshelf.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.448] [Error] Could not instantiate item '[tier4chair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.458] [Error] Could not load recipe /recipes/furniture2/decorative/tier4chair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.469] [Error] Could not instantiate item '[fullwood2, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.480] [Error] Could not load recipe /recipes/furniture1/materials/fullwood2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.490] [Error] Could not instantiate item '[crystalblock, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.500] [Error] Could not load recipe /recipes/furniture1/materials/crystalblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.512] [Error] Could not instantiate item '[silverplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.523] [Error] Could not load recipe /recipes/furniture2/materials/silverplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.532] [Error] Could not instantiate item '[hivelamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.543] [Error] Could not load recipe /recipes/biome/hive/hivelamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.552] [Error] Could not instantiate item '[ornatewood, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.563] [Error] Could not load recipe /recipes/furniture1/materials/ornatewood.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.574] [Error] Could not instantiate item '[craftingfurniture, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.585] [Error] Could not load recipe /recipes/inventorstable1/craftingfurniture.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.595] [Error] Could not instantiate item '[bookpiles, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.606] [Error] Could not load recipe /recipes/furniture1/materials/bookpiles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.616] [Error] Could not instantiate item '[brickmaterial, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.627] [Error] Could not load recipe /recipes/furniture1/materials/brickmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.639] [Error] Could not instantiate item '[tier1table, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.649] [Error] Could not load recipe /recipes/furniture1/decorative/tier1table.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.659] [Error] Could not instantiate item '[greencandycane3, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.670] [Error] Could not load recipe /recipes/holidaycraftingtable/greencandycane3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.683] [Error] Could not instantiate item '[eyechest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.694] [Error] Could not load recipe /recipes/biome/eyes/eyechest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.705] [Error] Could not instantiate item '[icedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.717] [Error] Could not load recipe /recipes/biome/ice/icedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.727] [Error] Could not instantiate item '[holly, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.737] [Error] Could not load recipe /recipes/holidaycraftingtable/holly.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.749] [Error] Could not instantiate item '[giantflowerchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.760] [Error] Could not load recipe /recipes/biome/giantflower/giantflowerchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.770] [Error] Could not instantiate item '[outpostplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.780] [Error] Could not load recipe /recipes/furniture2/materials/outpostplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.790] [Error] Could not instantiate item '[scorchedcitytv, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.800] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitytv.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.810] [Error] Could not instantiate item '[platematerial, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.821] [Error] Could not load recipe /recipes/furniture2/materials/platematerial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.831] [Error] Could not instantiate item '[decoratedtree, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.842] [Error] Could not load recipe /recipes/holidaycraftingtable/decoratedtree.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.852] [Error] Could not instantiate item '[fleshblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.862] [Error] Could not load recipe /recipes/furniture1/materials/fleshblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.873] [Error] Could not instantiate item '[icechest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.884] [Error] Could not load recipe /recipes/biome/ice/icechest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.897] [Error] Could not instantiate item '[scorchedcityfridge, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.908] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcityfridge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.920] [Error] Could not instantiate item '[hylotlshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.931] [Error] Could not load recipe /recipes/furniture2/doors/hylotlshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.942] [Error] Could not instantiate item '[tardoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.952] [Error] Could not load recipe /recipes/biome/tar/tardoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.962] [Error] Could not instantiate item '[crystallamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.973] [Error] Could not load recipe /recipes/biome/crystal/crystallamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.982] [Error] Could not instantiate item '[greengumdrop2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:23.993] [Error] Could not load recipe /recipes/holidaycraftingtable/greengumdrop2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.005] [Error] Could not instantiate item '[mirror, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.016] [Error] Could not load recipe /recipes/furniture1/materials/mirror.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.026] [Error] Could not instantiate item '[temple1, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.036] [Error] Could not load recipe /recipes/furniture1/materials/temple1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.046] [Error] Could not instantiate item '[giantbow2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.058] [Error] Could not load recipe /recipes/holidaycraftingtable/giantbow2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.073] [Error] Could not instantiate item '[cabinroofing, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.083] [Error] Could not load recipe /recipes/furniture1/materials/cabinroofing.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.098] [Error] Could not instantiate item '[airlockhatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.109] [Error] Could not load recipe /recipes/mission/hylotlmission1/airlockhatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.119] [Error] Could not instantiate item '[copperplatform, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.130] [Error] Could not load recipe /recipes/furniture1/materials/copperplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.140] [Error] Could not instantiate item '[platform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.151] [Error] Could not load recipe /recipes/emptyhands/platform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.161] [Error] Could not instantiate item '[smallwallbutton, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.172] [Error] Could not load recipe /recipes/wiringstation/switches/smallwallbutton.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.182] [Error] Could not instantiate item '[rustymetal, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.193] [Error] Could not load recipe /recipes/furniture1/materials/rustymetal.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.204] [Error] Could not instantiate item '[eyechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.214] [Error] Could not load recipe /recipes/biome/eyes/eyechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.224] [Error] Could not instantiate item '[redgumdrop2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.235] [Error] Could not load recipe /recipes/holidaycraftingtable/redgumdrop2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.248] [Error] Could not instantiate item '[cavelamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.258] [Error] Could not load recipe /recipes/biome/stonecave/cavelamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.270] [Error] Could not instantiate item '[celldoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.287] [Error] Could not load recipe /recipes/biome/cell/celldoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.300] [Error] Could not instantiate item '[icechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.399] [Error] Could not load recipe /recipes/biome/ice/icechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.411] [Error] Could not instantiate item '[toxiclamp1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.422] [Error] Could not load recipe /recipes/biome/toxic/toxiclamp1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.431] [Error] Could not instantiate item '[tombbrick4, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.442] [Error] Could not load recipe /recipes/furniture1/materials/tombbrick4.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.451] [Error] Could not instantiate item '[tier2bed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.461] [Error] Could not load recipe /recipes/furniture1/beds/tier2bed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.471] [Error] Could not instantiate item '[industrialtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.481] [Error] Could not load recipe /recipes/furniture2/decorative/industrialtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.492] [Error] Could not instantiate item '[tier2chair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.502] [Error] Could not load recipe /recipes/furniture1/decorative/tier2chair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.513] [Error] Could not instantiate item '[prismlamp1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.523] [Error] Could not load recipe /recipes/biome/prism/prismlamp1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.533] [Error] Could not instantiate item '[copperblock, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.543] [Error] Could not load recipe /recipes/furniture1/materials/copperblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.554] [Error] Could not instantiate item '[homewalls1, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.564] [Error] Could not load recipe /recipes/furniture1/materials/homewalls1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.574] [Error] Could not instantiate item '[outpostwall1, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.584] [Error] Could not load recipe /recipes/furniture2/materials/outpostwall.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.594] [Error] Could not instantiate item '[terraformerjungle, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.604] [Error] Could not load recipe /recipes/terraforge/terraformerjungle.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.614] [Error] Could not instantiate item '[slimechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.625] [Error] Could not load recipe /recipes/biome/slime/slimechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.636] [Error] Could not instantiate item '[apexshipplatform, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.646] [Error] Could not load recipe /recipes/furniture1/materials/apexshipplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.656] [Error] Could not instantiate item '[glitchshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.666] [Error] Could not load recipe /recipes/furniture2/doors/glitchshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.676] [Error] Could not instantiate item '[geodeceilinglight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.686] [Error] Could not load recipe /recipes/biome/geode/geodeceilinglight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.696] [Error] Could not instantiate item '[craftinganvil, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.706] [Error] Could not load recipe /recipes/inventorstable1/craftinganvil.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.716] [Error] Could not instantiate item '[reedbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.727] [Error] Could not load recipe /recipes/biome/oasis/reedbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.737] [Error] Could not instantiate item '[glowbushlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.748] [Error] Could not load recipe /recipes/biome/bioluminescence/glowbushlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.757] [Error] Could not instantiate item '[hylotlsupportbeam, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.768] [Error] Could not load recipe /recipes/mission/hylotlmission1/hylotlsupportbeam.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.781] [Error] Could not instantiate item '[heavyironbars, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.791] [Error] Could not load recipe /recipes/furniture1/materials/heavyironbars.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.801] [Error] Could not instantiate item '[reedshelf, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.812] [Error] Could not load recipe /recipes/biome/oasis/reedshelf.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.822] [Error] Could not instantiate item '[futurelight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.833] [Error] Could not load recipe /recipes/old/portable3dprinter/futurelight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.843] [Error] Could not instantiate item '[minifridge, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.853] [Error] Could not load recipe /recipes/furniture1/storage/minifridge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.863] [Error] Could not instantiate item '[stoneteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.874] [Error] Could not load recipe /recipes/teleporterstore/stoneteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.884] [Error] Could not instantiate item '[rockbrickmaterial, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.894] [Error] Could not load recipe /recipes/furniture1/materials/rockbrickmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.903] [Error] Could not instantiate item '[heartforge, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.914] [Error] Could not load recipe /recipes/heartforge/heartforge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.924] [Error] Could not instantiate item '[tier2door, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.934] [Error] Could not load recipe /recipes/furniture1/doors/tier2door.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.943] [Error] Could not instantiate item '[smallfloorbutton, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.954] [Error] Could not load recipe /recipes/wiringstation/switches/smallfloorbutton.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.964] [Error] Could not instantiate item '[railswitch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.974] [Error] Could not load recipe /recipes/rails/railswitch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.984] [Error] Could not instantiate item '[foundrychair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:24.995] [Error] Could not load recipe /recipes/biome/foundry/foundrychair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.005] [Error] Could not instantiate item '[tier1door, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.015] [Error] Could not load recipe /recipes/furniture1/doors/tier1door.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.025] [Error] Could not instantiate item '[railstop, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.036] [Error] Could not load recipe /recipes/rails/railstop.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.045] [Error] Could not instantiate item '[scorchedcitycounter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.056] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitycounter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.066] [Error] Could not instantiate item '[pressurisedgirder, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.076] [Error] Could not load recipe /recipes/furniture2/materials/pressurisedgirder.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.086] [Error] Could not instantiate item '[avianshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.096] [Error] Could not load recipe /recipes/furniture2/doors/avianshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.105] [Error] Could not instantiate item '[crystalbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.116] [Error] Could not load recipe /recipes/biome/crystal/crystalbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.128] [Error] Could not instantiate item '[and, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.138] [Error] Could not load recipe /recipes/wiringstation/logic/and.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.155] [Error] Could not instantiate item '[ornatewall, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.165] [Error] Could not load recipe /recipes/furniture1/materials/ornatewall.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.180] [Error] Could not instantiate item '[pethealingstation, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.190] [Error] Could not load recipe /recipes/creaturecapture/pethealingstation.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.200] [Error] Could not instantiate item '[glowflowerlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.211] [Error] Could not load recipe /recipes/biome/bioluminescence/glowflowerlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.221] [Error] Could not instantiate item '[avianstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.231] [Error] Could not load recipe /recipes/furniture2/storage/avianstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.241] [Error] Could not instantiate item '[springchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.252] [Error] Could not load recipe /recipes/biome/spring/springchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.263] [Error] Could not instantiate item '[snowman, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.273] [Error] Could not load recipe /recipes/biome/snow/snowman.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.283] [Error] Could not instantiate item '[torch, 4, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.293] [Error] Could not load recipe /recipes/emptyhands/torch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.307] [Error] Could not instantiate item '[railbumper, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.318] [Error] Could not load recipe /recipes/rails/railbumper.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.328] [Error] Could not instantiate item '[lunarbasechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.338] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbasechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.349] [Error] Could not instantiate item '[rainbowwoodblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.359] [Error] Could not load recipe /recipes/furniture1/materials/rainbowwoodblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.369] [Error] Could not instantiate item '[bonedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.379] [Error] Could not load recipe /recipes/biome/bone/bonedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.397] [Error] Could not instantiate item '[stonetable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.407] [Error] Could not load recipe /recipes/biome/alpine/stonetable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.416] [Error] Could not instantiate item '[separatoraddon, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.427] [Error] Could not load recipe /recipes/inventorstable3/separatoraddon.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.437] [Error] Could not instantiate item '[rainbowchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.448] [Error] Could not load recipe /recipes/biome/colourful/rainbowchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.457] [Error] Could not instantiate item '[cactiblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.468] [Error] Could not load recipe /recipes/furniture1/materials/cactiblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.481] [Error] Could not instantiate item '[redcandycane3, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.492] [Error] Could not load recipe /recipes/holidaycraftingtable/redcandycane3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.502] [Error] Could not instantiate item '[glowvinelamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.512] [Error] Could not load recipe /recipes/biome/bioluminescence/glowvinelamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.522] [Error] Could not instantiate item '[pillarblock, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.532] [Error] Could not load recipe /recipes/furniture1/materials/pillarblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.543] [Error] Could not instantiate item '[giftmonsterbox, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.553] [Error] Could not load recipe /recipes/holidaycraftingtable/giftmonsterbox.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.563] [Error] Could not instantiate item '[glitchstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.574] [Error] Could not load recipe /recipes/furniture2/storage/glitchstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.583] [Error] Could not instantiate item '[shadowspikeblock, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.594] [Error] Could not load recipe /recipes/furniture1/materials/shadowspikeblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.605] [Error] Could not instantiate item '[swampbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.615] [Error] Could not load recipe /recipes/biome/swamp/swampbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.626] [Error] Could not instantiate item '[shadowwallblock, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.637] [Error] Could not load recipe /recipes/furniture1/materials/shadowwallblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.648] [Error] Could not instantiate item '[industrialdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.659] [Error] Could not load recipe /recipes/furniture2/doors/industrialdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.669] [Error] Could not instantiate item '[fossildisplay3, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.680] [Error] Could not load recipe /recipes/fossilstation/fossildisplay3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.689] [Error] Could not instantiate item '[techhull1, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.700] [Error] Could not load recipe /recipes/old/portable3dprinter/techhull1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.710] [Error] Could not instantiate item '[packeddirt, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.721] [Error] Could not load recipe /recipes/furniture1/materials/packeddirt.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.731] [Error] Could not instantiate item '[present4, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.742] [Error] Could not load recipe /recipes/holidaycraftingtable/present4.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.752] [Error] Could not instantiate item '[scorchedcitychair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.762] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitychair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.776] [Error] Could not instantiate item '[shroomdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.787] [Error] Could not load recipe /recipes/biome/mushroom/shroomdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.802] [Error] Could not instantiate item '[rainbowchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.813] [Error] Could not load recipe /recipes/biome/colourful/rainbowchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.823] [Error] Could not instantiate item '[composite01material, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.833] [Error] Could not load recipe /recipes/furniture2/materials/composite01material.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.843] [Error] Could not instantiate item '[copperroofing, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.854] [Error] Could not load recipe /recipes/furniture1/materials/copperroofing.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.863] [Error] Could not instantiate item '[heavypipe, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.874] [Error] Could not load recipe /recipes/furniture1/materials/heavypipe.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.884] [Error] Could not instantiate item '[tarlight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.894] [Error] Could not load recipe /recipes/biome/tar/tarlight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.905] [Error] Could not instantiate item '[geodegnote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.916] [Error] Could not load recipe /recipes/biome/geode/geodegnote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.927] [Error] Could not instantiate item '[geodefnote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.938] [Error] Could not load recipe /recipes/biome/geode/geodefnote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.948] [Error] Could not instantiate item '[cellchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.958] [Error] Could not load recipe /recipes/biome/cell/cellchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.968] [Error] Could not instantiate item '[rainbowbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.979] [Error] Could not load recipe /recipes/biome/colourful/rainbowbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.988] [Error] Could not instantiate item '[shroomtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:25.999] [Error] Could not load recipe /recipes/biome/mushroom/shroomtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.009] [Error] Could not instantiate item '[floranshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.019] [Error] Could not load recipe /recipes/furniture2/doors/floranshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.029] [Error] Could not instantiate item '[geodeenote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.040] [Error] Could not load recipe /recipes/biome/geode/geodeenote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.050] [Error] Could not instantiate item '[lunarbaseconsole, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.060] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbaseconsole.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.070] [Error] Could not instantiate item '[icebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.081] [Error] Could not load recipe /recipes/biome/ice/icebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.090] [Error] Could not instantiate item '[geodednote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.101] [Error] Could not load recipe /recipes/biome/geode/geodednote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.111] [Error] Could not instantiate item '[coppersupport, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.121] [Error] Could not load recipe /recipes/furniture1/decorative/coppersupport.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.130] [Error] Could not instantiate item '[crosshatch, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.141] [Error] Could not load recipe /recipes/furniture1/materials/crosshatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.153] [Error] Could not instantiate item '[geodebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.163] [Error] Could not load recipe /recipes/biome/geode/geodebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.172] [Error] Could not instantiate item '[shojiscreenpanel, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.183] [Error] Could not load recipe /recipes/furniture1/materials/shojiscreenpanel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.192] [Error] Could not instantiate item '[geodecnote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.203] [Error] Could not load recipe /recipes/biome/geode/geodecnote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.212] [Error] Could not instantiate item '[eyedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.223] [Error] Could not load recipe /recipes/biome/eyes/eyedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.232] [Error] Could not instantiate item '[stocking1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.242] [Error] Could not load recipe /recipes/holidaycraftingtable/stocking1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.252] [Error] Could not instantiate item '[lunarbasedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.263] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbasedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.272] [Error] Could not instantiate item '[bonetable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.283] [Error] Could not load recipe /recipes/biome/bone/bonetable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.292] [Error] Could not instantiate item '[geodebnote, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.302] [Error] Could not load recipe /recipes/biome/geode/geodebnote.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.312] [Error] Could not instantiate item '[toxictable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.322] [Error] Could not load recipe /recipes/biome/toxic/toxictable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.336] [Error] Could not instantiate item '[dreidel, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.346] [Error] Could not load recipe /recipes/holidaycraftingtable/dreidel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.359] [Error] Could not instantiate item '[woodbridge, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.369] [Error] Could not load recipe /recipes/furniture1/materials/woodbridge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.383] [Error] Could not instantiate item '[fleshdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.393] [Error] Could not load recipe /recipes/biome/flesh/fleshdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.403] [Error] Could not instantiate item '[prismtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.413] [Error] Could not load recipe /recipes/biome/prism/prismtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.423] [Error] Could not instantiate item '[slimetorch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.433] [Error] Could not load recipe /recipes/biome/slime/slimetorch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.443] [Error] Could not instantiate item '[rustchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.453] [Error] Could not load recipe /recipes/biome/rust/rustchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.463] [Error] Could not instantiate item '[fleshchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.474] [Error] Could not load recipe /recipes/biome/flesh/fleshchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.485] [Error] Could not instantiate item '[tier4switch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.495] [Error] Could not load recipe /recipes/wiringstation/switches/tier4switch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.506] [Error] Could not instantiate item '[silverscrew, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.516] [Error] Could not load recipe /recipes/furniture2/materials/silverscrew.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.526] [Error] Could not instantiate item '[cellchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.537] [Error] Could not load recipe /recipes/biome/cell/cellchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.551] [Error] Could not instantiate item '[industrialcrate, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.562] [Error] Could not load recipe /recipes/furniture2/storage/industrialcrate.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.572] [Error] Could not instantiate item '[sandstoneblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.582] [Error] Could not load recipe /recipes/furniture1/materials/sandstoneblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.593] [Error] Could not instantiate item '[temple2, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.604] [Error] Could not load recipe /recipes/furniture1/materials/temple2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.616] [Error] Could not instantiate item '[wickersupport, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.635] [Error] Could not load recipe /recipes/furniture1/materials/wickersupport.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.648] [Error] Could not instantiate item '[terraformervolcanic, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.660] [Error] Could not load recipe /recipes/terraforge/terraformervolcanic.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.670] [Error] Could not instantiate item '[copperwindow, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.680] [Error] Could not load recipe /recipes/furniture1/materials/copperwindow.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.690] [Error] Could not instantiate item '[rustchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.701] [Error] Could not load recipe /recipes/biome/rust/rustchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.714] [Error] Could not instantiate item '[fleshchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.725] [Error] Could not load recipe /recipes/biome/flesh/fleshchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.735] [Error] Could not instantiate item '[hivedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.745] [Error] Could not load recipe /recipes/biome/hive/hivedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.755] [Error] Could not instantiate item '[tier3bed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.766] [Error] Could not load recipe /recipes/furniture2/beds/tier3bed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.776] [Error] Could not instantiate item '[darksmoothstonematerial, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.786] [Error] Could not load recipe /recipes/furniture1/materials/darksmoothmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.796] [Error] Could not instantiate item '[toxiclamp2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.807] [Error] Could not load recipe /recipes/biome/toxic/toxiclamp2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.817] [Error] Could not instantiate item '[tombbrick5, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.828] [Error] Could not load recipe /recipes/furniture1/materials/tombbrick5.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.838] [Error] Could not instantiate item '[tier1light, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.849] [Error] Could not load recipe /recipes/furniture1/lights/tier1light.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.862] [Error] Could not instantiate item '[prismlamp2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.873] [Error] Could not load recipe /recipes/biome/prism/prismlamp2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.883] [Error] Could not instantiate item '[apexstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.893] [Error] Could not load recipe /recipes/furniture2/storage/apexstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.903] [Error] Could not instantiate item '[woodenwindow1, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.914] [Error] Could not load recipe /recipes/furniture1/materials/woodenwindow1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.924] [Error] Could not instantiate item '[giantflowerbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.934] [Error] Could not load recipe /recipes/biome/giantflower/giantflowerbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.944] [Error] Could not instantiate item '[tombbrick, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.955] [Error] Could not load recipe /recipes/furniture1/materials/tombbrick.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.964] [Error] Could not instantiate item '[holidaycraftingtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.975] [Error] Could not load recipe /recipes/holidaycraftingtable/holidaycraftingtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.985] [Error] Could not instantiate item '[tier1spotlight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:26.996] [Error] Could not load recipe /recipes/furniture1/lights/tier1spotlight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.006] [Error] Could not instantiate item '[floranshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.017] [Error] Could not load recipe /recipes/furniture2/doors/floranshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.028] [Error] Could not instantiate item '[novakidshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.038] [Error] Could not load recipe /recipes/furniture2/doors/novakidshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.048] [Error] Could not instantiate item '[woodenteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.058] [Error] Could not load recipe /recipes/teleporterstore/woodenteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.071] [Error] Could not instantiate item '[steamspringchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.082] [Error] Could not load recipe /recipes/biome/steamspring/steamspringchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.092] [Error] Could not instantiate item '[xor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.102] [Error] Could not load recipe /recipes/wiringstation/logic/xor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.112] [Error] Could not instantiate item '[shroomblock, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.123] [Error] Could not load recipe /recipes/furniture1/materials/shroomblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.132] [Error] Could not instantiate item '[novakidshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.143] [Error] Could not load recipe /recipes/furniture2/doors/novakidshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.152] [Error] Could not instantiate item '[liquidsensor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.163] [Error] Could not load recipe /recipes/wiringstation/sensors/liquidsensor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.173] [Error] Could not instantiate item '[glowchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.183] [Error] Could not load recipe /recipes/biome/bioluminescence/glowchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.194] [Error] Could not instantiate item '[crystalchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.205] [Error] Could not load recipe /recipes/biome/crystal/crystalchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.214] [Error] Could not instantiate item '[copperfence, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.225] [Error] Could not load recipe /recipes/furniture1/materials/copperfence.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.237] [Error] Could not instantiate item '[smallholidaytree, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.248] [Error] Could not load recipe /recipes/holidaycraftingtable/smallholidaytree.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.259] [Error] Could not instantiate item '[tier3switch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.269] [Error] Could not load recipe /recipes/wiringstation/switches/tier3switch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.279] [Error] Could not instantiate item '[menorah, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.290] [Error] Could not load recipe /recipes/holidaycraftingtable/menorah.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.300] [Error] Could not instantiate item '[outpostwall2, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.310] [Error] Could not load recipe /recipes/furniture2/materials/outpostwall2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.321] [Error] Could not instantiate item '[eyepiles, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.331] [Error] Could not load recipe /recipes/furniture1/materials/eyepiles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.346] [Error] Could not instantiate item '[wicker, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.357] [Error] Could not load recipe /recipes/furniture1/materials/wicker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.367] [Error] Could not instantiate item '[scorchedcityregister, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.378] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcityregister.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.388] [Error] Could not instantiate item '[aliendoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.398] [Error] Could not load recipe /recipes/biome/alien/aliendoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.409] [Error] Could not instantiate item '[scifisleigh, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.419] [Error] Could not load recipe /recipes/holidaycraftingtable/scifisleigh.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.429] [Error] Could not instantiate item '[modernplatform, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.440] [Error] Could not load recipe /recipes/old/portable3dprinter/modernplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.450] [Error] Could not instantiate item '[terraformersavannah, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.461] [Error] Could not load recipe /recipes/terraforge/terraformersavannah.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.471] [Error] Could not instantiate item '[scorchedcitychestdrawersmall, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.481] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitychestdrawersmall.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.491] [Error] Could not instantiate item '[stonebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.501] [Error] Could not load recipe /recipes/biome/alpine/stonebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.512] [Error] Could not instantiate item '[prismbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.523] [Error] Could not load recipe /recipes/biome/prism/prismbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.532] [Error] Could not instantiate item '[steamspringlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.543] [Error] Could not load recipe /recipes/biome/steamspring/steamspringlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.553] [Error] Could not instantiate item '[lunarbaselocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.563] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbaselocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.573] [Error] Could not instantiate item '[dlatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.584] [Error] Could not load recipe /recipes/wiringstation/logic/dlatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.593] [Error] Could not instantiate item '[alienchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.604] [Error] Could not load recipe /recipes/biome/alien/alienchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.613] [Error] Could not instantiate item '[outpostsupport, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.624] [Error] Could not load recipe /recipes/furniture2/materials/outpostsupport.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.634] [Error] Could not instantiate item '[glowchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.644] [Error] Could not load recipe /recipes/biome/bioluminescence/glowchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.654] [Error] Could not instantiate item '[crystalchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.665] [Error] Could not load recipe /recipes/biome/crystal/crystalchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.683] [Error] Could not instantiate item '[humanstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.694] [Error] Could not load recipe /recipes/furniture2/storage/humanstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.705] [Error] Could not instantiate item '[eyebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.716] [Error] Could not load recipe /recipes/biome/eyes/eyebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.726] [Error] Could not instantiate item '[tribalplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.737] [Error] Could not load recipe /recipes/furniture1/materials/tribalplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.746] [Error] Could not instantiate item '[futureteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.757] [Error] Could not load recipe /recipes/teleporterstore/futureteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.768] [Error] Could not instantiate item '[tarchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.779] [Error] Could not load recipe /recipes/biome/tar/tarchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.788] [Error] Could not instantiate item '[rustyrail, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.799] [Error] Could not load recipe /recipes/rails/railcraftingtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.809] [Error] Could not instantiate item '[hazard, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.820] [Error] Could not load recipe /recipes/furniture1/materials/hazard.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.830] [Error] Could not instantiate item '[railcraftingtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.839] [Error] Could not load recipe /recipes/inventorstable3/railcraftingtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.850] [Error] Could not instantiate item '[fossilstation, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.860] [Error] Could not load recipe /recipes/inventorstable2/fossilstation.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.870] [Error] Could not instantiate item '[compositerail, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.881] [Error] Could not load recipe /recipes/rails/compositerail.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.891] [Error] Could not instantiate item '[copperbox1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.902] [Error] Could not load recipe /recipes/furniture1/storage/copperbox1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.914] [Error] Could not instantiate item '[lollipop1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.924] [Error] Could not load recipe /recipes/holidaycraftingtable/lollipop1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.937] [Error] Could not instantiate item '[cavebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.947] [Error] Could not load recipe /recipes/biome/stonecave/cavebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.957] [Error] Could not instantiate item '[reedchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.967] [Error] Could not load recipe /recipes/biome/oasis/reedchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.980] [Error] Could not instantiate item '[apexshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:27.991] [Error] Could not load recipe /recipes/furniture2/doors/apexshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.001] [Error] Could not instantiate item '[alienchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.011] [Error] Could not load recipe /recipes/biome/alien/alienchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.021] [Error] Could not instantiate item '[alienbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.032] [Error] Could not load recipe /recipes/biome/alien/alienbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.042] [Error] Could not instantiate item '[stonetiles, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.052] [Error] Could not load recipe /recipes/furniture1/materials/stonetiles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.062] [Error] Could not instantiate item '[modernplatform, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.073] [Error] Could not load recipe /recipes/furniture2/materials/modernplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.084] [Error] Could not instantiate item '[bioshroomtable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.095] [Error] Could not load recipe /recipes/biome/bioluminescentcave/bioshroomtable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.105] [Error] Could not instantiate item '[giantflowerlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.115] [Error] Could not load recipe /recipes/biome/giantflower/giantflowerlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.125] [Error] Could not instantiate item '[lightmetal, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.136] [Error] Could not load recipe /recipes/old/portable3dprinter/lightmetal.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.146] [Error] Could not instantiate item '[holidaycandles, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.157] [Error] Could not load recipe /recipes/holidaycraftingtable/holidaycandles.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.167] [Error] Could not instantiate item '[tier3chair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.177] [Error] Could not load recipe /recipes/furniture2/decorative/tier3chair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.187] [Error] Could not instantiate item '[kennel, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.198] [Error] Could not load recipe /recipes/old/unsorted/kennel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.207] [Error] Could not instantiate item '[railtramstop, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.218] [Error] Could not load recipe /recipes/rails/railtramstop.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.231] [Error] Could not instantiate item '[industrialstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.241] [Error] Could not load recipe /recipes/furniture2/storage/industrialstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.251] [Error] Could not instantiate item '[bigredbutton, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.261] [Error] Could not load recipe /recipes/wiringstation/switches/bigredbutton.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.272] [Error] Could not instantiate item '[manipulatoraddon, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.283] [Error] Could not load recipe /recipes/inventorstable3/manipulatoraddon.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.292] [Error] Could not instantiate item '[hivechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.303] [Error] Could not load recipe /recipes/biome/hive/hivechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.313] [Error] Could not instantiate item '[tier2switch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.323] [Error] Could not load recipe /recipes/wiringstation/switches/tier2switch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.333] [Error] Could not instantiate item '[reedlamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.344] [Error] Could not load recipe /recipes/biome/oasis/reedlamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.355] [Error] Could not instantiate item '[stoneplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.365] [Error] Could not load recipe /recipes/furniture1/materials/stoneplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.382] [Error] Could not instantiate item '[reedchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.392] [Error] Could not load recipe /recipes/biome/oasis/reedchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.403] [Error] Could not instantiate item '[flagglitch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.413] [Error] Could not load recipe /recipes/emptyhands/flagglitch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.423] [Error] Could not instantiate item '[tombbrick5, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.434] [Error] Could not load recipe /recipes/furniture1/materials/wallpaper.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.444] [Error] Could not instantiate item '[bulb, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.455] [Error] Could not load recipe /recipes/wiringstation/mechanics/bulb.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.464] [Error] Could not instantiate item '[scorchedcitybed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.475] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitybed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.486] [Error] Could not instantiate item '[glowbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.497] [Error] Could not load recipe /recipes/biome/bioluminescence/glowbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.508] [Error] Could not instantiate item '[giftmonstersmallbox, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.519] [Error] Could not load recipe /recipes/holidaycraftingtable/giftmonstersmallbox.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.531] [Error] Could not instantiate item '[flagapex, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.541] [Error] Could not load recipe /recipes/emptyhands/flagapex.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.551] [Error] Could not instantiate item '[modernchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.562] [Error] Could not load recipe /recipes/old/portable3dprinter/modernchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.571] [Error] Could not instantiate item '[tinywallswitch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.582] [Error] Could not load recipe /recipes/wiringstation/switches/tinywallswitch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.592] [Error] Could not instantiate item '[ornateroofing, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.602] [Error] Could not load recipe /recipes/furniture1/materials/ornateroofing.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.613] [Error] Could not instantiate item '[stocking2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.623] [Error] Could not load recipe /recipes/holidaycraftingtable/stocking2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.636] [Error] Could not instantiate item '[avianshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.646] [Error] Could not load recipe /recipes/furniture2/doors/avianshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.656] [Error] Could not instantiate item '[mediummetal, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.667] [Error] Could not load recipe /recipes/furniture2/materials/mediummetal.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.677] [Error] Could not instantiate item '[flowerbox, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.687] [Error] Could not load recipe /recipes/biome/spring/flowerbox.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.697] [Error] Could not instantiate item '[not, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.708] [Error] Could not load recipe /recipes/wiringstation/logic/not.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.717] [Error] Could not instantiate item '[slopedscrappanel, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.728] [Error] Could not load recipe /recipes/furniture2/materials/slopedscrappanel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.738] [Error] Could not instantiate item '[geodedoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.749] [Error] Could not load recipe /recipes/biome/geode/geodedoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.759] [Error] Could not instantiate item '[miningchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.769] [Error] Could not load recipe /recipes/mission/lunarbase/miningchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.779] [Error] Could not instantiate item '[pressurisedplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.790] [Error] Could not load recipe /recipes/furniture2/materials/pressurisedplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.800] [Error] Could not instantiate item '[hylotlstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.811] [Error] Could not load recipe /recipes/furniture2/storage/hylotlstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.822] [Error] Could not instantiate item '[undecoratedtree, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.832] [Error] Could not load recipe /recipes/holidaycraftingtable/undecoratedtree.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.842] [Error] Could not instantiate item '[coppershelf, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.852] [Error] Could not load recipe /recipes/furniture1/decorative/coppershelf.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.866] [Error] Could not instantiate item '[treasurehoard, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.877] [Error] Could not load recipe /recipes/furniture2/materials/treasurehoard.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.890] [Error] Could not instantiate item '[silverblock, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.901] [Error] Could not load recipe /recipes/furniture2/materials/silverblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.911] [Error] Could not instantiate item '[temple3, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.921] [Error] Could not load recipe /recipes/furniture1/materials/temple3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.931] [Error] Could not instantiate item '[tier1chair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.941] [Error] Could not load recipe /recipes/furniture1/decorative/tier1chair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.951] [Error] Could not instantiate item '[neonblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.961] [Error] Could not load recipe /recipes/furniture2/materials/neonblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.971] [Error] Could not instantiate item '[redtoyblock, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.981] [Error] Could not load recipe /recipes/old/portable3dprinter/redtoyblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:28.993] [Error] Could not instantiate item '[tier4door, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.003] [Error] Could not load recipe /recipes/furniture2/doors/tier4door.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.013] [Error] Could not instantiate item '[flagavian, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.023] [Error] Could not load recipe /recipes/emptyhands/flagavian.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.035] [Error] Could not instantiate item '[bamboo, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.045] [Error] Could not load recipe /recipes/furniture1/materials/bamboo.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.055] [Error] Could not instantiate item '[goldenplatform, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.065] [Error] Could not load recipe /recipes/furniture2/materials/goldenplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.075] [Error] Could not instantiate item '[rainbowdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.085] [Error] Could not load recipe /recipes/biome/colourful/rainbowdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.094] [Error] Could not instantiate item '[tier3door, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.105] [Error] Could not load recipe /recipes/furniture2/doors/tier3door.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.115] [Error] Could not instantiate item '[reedclock, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.125] [Error] Could not load recipe /recipes/biome/oasis/reedclock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.141] [Error] Could not instantiate item '[tier1switch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.152] [Error] Could not load recipe /recipes/wiringstation/switches/tier1switch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.161] [Error] Could not instantiate item '[humanshipdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.172] [Error] Could not load recipe /recipes/furniture2/doors/humanshipdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.184] [Error] Could not instantiate item '[novakidstoragelocker, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.194] [Error] Could not load recipe /recipes/furniture2/storage/novakidstoragelocker.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.204] [Error] Could not instantiate item '[geodechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.215] [Error] Could not load recipe /recipes/biome/geode/geodechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.225] [Error] Could not instantiate item '[floweryblock, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.236] [Error] Could not load recipe /recipes/furniture1/materials/floweryblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.247] [Error] Could not instantiate item '[tarconsole, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.263] [Error] Could not load recipe /recipes/biome/tar/tarconsole.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.273] [Error] Could not instantiate item '[fence, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.284] [Error] Could not load recipe /recipes/furniture1/materials/fence.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.298] [Error] Could not instantiate item '[prismlamp3, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.309] [Error] Could not load recipe /recipes/biome/prism/prismlamp3.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.321] [Error] Could not instantiate item '[industriallight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.332] [Error] Could not load recipe /recipes/furniture2/lights/industriallight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.342] [Error] Could not instantiate item '[industrialdisplay, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.351] [Error] Could not load recipe /recipes/furniture2/decorative/industrialdisplay.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.362] [Error] Could not instantiate item '[woodenwindow2, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.373] [Error] Could not load recipe /recipes/furniture1/materials/woodenwindow2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.383] [Error] Could not instantiate item '[proximitysensor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.394] [Error] Could not load recipe /recipes/wiringstation/sensors/proximitysensor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.404] [Error] Could not instantiate item '[secrettrapdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.414] [Error] Could not load recipe /recipes/wiringstation/mechanics/secrettrapdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.425] [Error] Could not instantiate item '[holidaylights, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.435] [Error] Could not load recipe /recipes/holidaycraftingtable/holidaylights.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.446] [Error] Could not instantiate item '[tier4light, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.457] [Error] Could not load recipe /recipes/furniture2/lights/tier4light.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.468] [Error] Could not instantiate item '[copperceilinglight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.479] [Error] Could not load recipe /recipes/furniture1/lights/copperceilinglight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.489] [Error] Could not instantiate item '[hylotlshiphatch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.499] [Error] Could not load recipe /recipes/furniture2/doors/hylotlshiphatch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.516] [Error] Could not instantiate item '[scarecrow, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.526] [Error] Could not load recipe /recipes/farmtable1/farming/scarecrow.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.536] [Error] Could not instantiate item '[industrialchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.546] [Error] Could not load recipe /recipes/furniture2/decorative/industrialchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.557] [Error] Could not instantiate item '[alarm, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.567] [Error] Could not load recipe /recipes/wiringstation/mechanics/alarm.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.577] [Error] Could not instantiate item '[scorchedcitychestdrawerlarge, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.588] [Error] Could not load recipe /recipes/biome/scorchedcity/scorchedcitychestdrawerlarge.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.598] [Error] Could not instantiate item '[shroomwardrobe, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.608] [Error] Could not load recipe /recipes/biome/mushroom/shroomwardrobe.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.619] [Error] Could not instantiate item '[craftingfurnace, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.630] [Error] Could not load recipe /recipes/inventorstable1/craftingfurnace.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.640] [Error] Could not instantiate item '[plantblock, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.651] [Error] Could not load recipe /recipes/furniture1/materials/plantblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.661] [Error] Could not instantiate item '[tier1bed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.671] [Error] Could not load recipe /recipes/furniture1/beds/tier1bed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.682] [Error] Could not instantiate item '[cheapwallpaper, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.693] [Error] Could not load recipe /recipes/furniture1/materials/cheapwallpaper.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.703] [Error] Could not instantiate item '[tier4table, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.713] [Error] Could not load recipe /recipes/furniture2/decorative/tier4table.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.724] [Error] Could not instantiate item '[sewerpipe, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.734] [Error] Could not load recipe /recipes/furniture1/materials/sewerpipe.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.745] [Error] Could not instantiate item '[mannequin, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.755] [Error] Could not load recipe /recipes/spinningwheel2/objects/mannequin.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.764] [Error] Could not instantiate item '[fleshbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.775] [Error] Could not load recipe /recipes/biome/flesh/fleshbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.786] [Error] Could not instantiate item '[apexshipsupport, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.796] [Error] Could not load recipe /recipes/furniture1/materials/apexshipsupport.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.810] [Error] Could not instantiate item '[bambooplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.820] [Error] Could not load recipe /recipes/furniture1/materials/bambooplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.830] [Error] Could not instantiate item '[present1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.840] [Error] Could not load recipe /recipes/holidaycraftingtable/present1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.850] [Error] Could not instantiate item '[pettether, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.861] [Error] Could not load recipe /recipes/creaturecapture/pettether.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.874] [Error] Could not instantiate item '[slimebed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.885] [Error] Could not load recipe /recipes/biome/slime/slimebed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.895] [Error] Could not instantiate item '[smallbow, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.905] [Error] Could not load recipe /recipes/holidaycraftingtable/smallbow.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.915] [Error] Could not instantiate item '[tarbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.925] [Error] Could not load recipe /recipes/biome/tar/tarbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.938] [Error] Could not instantiate item '[terraformersnow, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.948] [Error] Could not load recipe /recipes/terraforge/terraformersnow.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.959] [Error] Could not instantiate item '[blackteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.969] [Error] Could not load recipe /recipes/teleporterstore/blackteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.982] [Error] Could not instantiate item '[craftingwheel, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:29.992] [Error] Could not load recipe /recipes/inventorstable1/craftingwheel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.002] [Error] Could not instantiate item '[redball, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.012] [Error] Could not load recipe /recipes/holidaycraftingtable/redball.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.021] [Error] Could not instantiate item '[giantflowertable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.032] [Error] Could not load recipe /recipes/biome/giantflower/giantflowertable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.042] [Error] Could not instantiate item '[lunarbasebunk, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.052] [Error] Could not load recipe /recipes/mission/lunarbase/lunarbasebunk.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.062] [Error] Could not instantiate item '[magmalamp, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.072] [Error] Could not load recipe /recipes/biome/foundry/magmalamp.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.082] [Error] Could not instantiate item '[blackglass, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.092] [Error] Could not load recipe /recipes/furniture1/materials/blackglass.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.102] [Error] Could not instantiate item '[mossypackeddirt, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.112] [Error] Could not load recipe /recipes/furniture1/materials/mossypackeddirt.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.122] [Error] Could not instantiate item '[stonechest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.133] [Error] Could not load recipe /recipes/biome/alpine/stonechest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.145] [Error] Could not instantiate item '[skulltorch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.155] [Error] Could not load recipe /recipes/mission/floranmission1/skulltorch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.169] [Error] Could not instantiate item '[copperlantern, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.180] [Error] Could not load recipe /recipes/furniture1/lights/copperlantern.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.190] [Error] Could not instantiate item '[ironblock, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.200] [Error] Could not load recipe /recipes/furniture1/materials/ironblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.211] [Error] Could not instantiate item '[lollipop2, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.221] [Error] Could not load recipe /recipes/holidaycraftingtable/lollipop2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.232] [Error] Could not instantiate item '[smallwallswitch, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.242] [Error] Could not load recipe /recipes/wiringstation/switches/smallwallswitch.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.251] [Error] Could not instantiate item '[greencandycane1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.261] [Error] Could not load recipe /recipes/holidaycraftingtable/greencandycane1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.271] [Error] Could not instantiate item '[goldball, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.282] [Error] Could not load recipe /recipes/holidaycraftingtable/goldball.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.292] [Error] Could not instantiate item '[goldblock, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.302] [Error] Could not load recipe /recipes/furniture2/materials/goldblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.316] [Error] Could not instantiate item '[eyetable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.327] [Error] Could not load recipe /recipes/biome/eyes/eyetable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.346] [Error] Could not instantiate item '[girdermaterial, 40, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.356] [Error] Could not load recipe /recipes/furniture1/materials/girder.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.366] [Error] Could not instantiate item '[fossildisplay5, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.376] [Error] Could not load recipe /recipes/fossilstation/fossildisplay5.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.386] [Error] Could not instantiate item '[or, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.396] [Error] Could not load recipe /recipes/wiringstation/logic/or.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.409] [Error] Could not instantiate item '[icetable, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.419] [Error] Could not load recipe /recipes/biome/ice/icetable.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.429] [Error] Could not instantiate item '[steamspringdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.439] [Error] Could not load recipe /recipes/biome/steamspring/steamspringdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.449] [Error] Could not instantiate item '[smallsnowflake, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.460] [Error] Could not load recipe /recipes/holidaycraftingtable/smallsnowflake.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.470] [Error] Could not instantiate item '[purplegumdrop1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.481] [Error] Could not load recipe /recipes/holidaycraftingtable/purplegumdrop1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.493] [Error] Could not instantiate item '[aztecmaterial, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.504] [Error] Could not load recipe /recipes/furniture1/materials/aztec.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.514] [Error] Could not instantiate item '[woodencrate1, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.524] [Error] Could not load recipe /recipes/furniture1/storage/woodencrate1.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.534] [Error] Could not instantiate item '[stonechair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.544] [Error] Could not load recipe /recipes/biome/alpine/stonechair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.554] [Error] Could not instantiate item '[tier2table, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.565] [Error] Could not load recipe /recipes/furniture1/decorative/tier2table.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.575] [Error] Could not instantiate item '[plantplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.586] [Error] Could not load recipe /recipes/furniture1/materials/plantplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.596] [Error] Could not instantiate item '[slopedinsetpanel, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.607] [Error] Could not load recipe /recipes/furniture2/materials/slopedinsetpanel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.617] [Error] Could not instantiate item '[plantmatter, 15, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.627] [Error] Could not load recipe /recipes/furniture1/materials/plantmatter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.642] [Error] Could not instantiate item '[rustbed, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.653] [Error] Could not load recipe /recipes/biome/rust/rustbed.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.662] [Error] Could not instantiate item '[shroomchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.673] [Error] Could not load recipe /recipes/biome/mushroom/shroomchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.683] [Error] Could not instantiate item '[copperladder, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.693] [Error] Could not load recipe /recipes/furniture1/materials/copperladder.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.702] [Error] Could not instantiate item '[asphalt, 20, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.713] [Error] Could not load recipe /recipes/furniture2/materials/asphalt.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.724] [Error] Could not instantiate item '[tarpitchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.735] [Error] Could not load recipe /recipes/biome/tar/tarpitchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.747] [Error] Could not instantiate item '[terraformerscorched, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.757] [Error] Could not load recipe /recipes/terraforge/terraformerscorched.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.768] [Error] Could not instantiate item '[tombbrick2, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.780] [Error] Could not load recipe /recipes/furniture1/materials/tombbrick2.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.790] [Error] Could not instantiate item '[bonechest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.801] [Error] Could not load recipe /recipes/biome/bone/bonechest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.810] [Error] Could not instantiate item '[junktech, 50, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.821] [Error] Could not load recipe /recipes/furniture1/materials/junktech.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.832] [Error] Could not instantiate item '[flaghylotl, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.842] [Error] Could not load recipe /recipes/emptyhands/flaghylotl.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.856] [Error] Could not instantiate item '[iceblock, 5, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.867] [Error] Could not load recipe /recipes/biome/snow/iceblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.877] [Error] Could not instantiate item '[slimehide, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.887] [Error] Could not load recipe /recipes/biome/slime/slimehide.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.897] [Error] Could not instantiate item '[toxicchest, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.907] [Error] Could not load recipe /recipes/biome/toxic/toxicchest.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.918] [Error] Could not instantiate item '[reedblock, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.929] [Error] Could not load recipe /recipes/furniture1/materials/reedblock.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.946] [Error] Could not instantiate item '[laboratoryverticaldoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.957] [Error] Could not load recipe /recipes/mission/apexmission1/laboratoryverticaldoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.969] [Error] Could not instantiate item '[giantflowerdoor, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.980] [Error] Could not load recipe /recipes/biome/giantflower/giantflowerdoor.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:30.991] [Error] Could not instantiate item '[venusdepixel, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.002] [Error] Could not load recipe /recipes/treasuredtrophies/venusdepixel.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.011] [Error] Could not instantiate item '[craftingfarm, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.022] [Error] Could not load recipe /recipes/inventorstable1/craftingfarm.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.034] [Error] Could not instantiate item '[campfire, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.044] [Error] Could not load recipe /recipes/emptyhands/campfire.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.054] [Error] Could not instantiate item '[laboratorylight, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.065] [Error] Could not load recipe /recipes/mission/apexmission1/laboratorylight.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.075] [Error] Could not instantiate item '[tombteleporter, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.085] [Error] Could not load recipe /recipes/teleporterstore/tombteleporter.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.095] [Error] Could not instantiate item '[countdowntimer, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.106] [Error] Could not load recipe /recipes/wiringstation/logic/countdowntimer.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.116] [Error] Could not instantiate item '[refinery, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.126] [Error] Could not load recipe /recipes/inventorstable2/refinery.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.137] [Error] Could not instantiate item '[tungstenplatform, 10, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.148] [Error] Could not load recipe /recipes/old/oldold/tungstenplatform.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.158] [Error] Could not instantiate item '[metallicmaterial, 30, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.168] [Error] Could not load recipe /recipes/furniture2/materials/metallicmaterial.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.178] [Error] Could not instantiate item '[shroomchair, 1, {}]'. (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.189] [Error] Could not load recipe /recipes/biome/mushroom/shroomchair.recipe: (AssetException) Error loading asset /player.config:beamGunConfig
+[13:43:31.539] [Info] Root: Loaded ItemDatabase in 13.446 seconds
+[13:43:31.556] [Error] Application: exception thrown, shutting down: (AssetException) Error loading asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[6] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[7] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[8] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[9] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[10] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[11] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[14] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[15] 7ff77a280cd2 Star::Root::playerFactory
+[16] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[17] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[18] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[19] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[20] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[21] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[22] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[23] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[24] 7ff779ec3c5e Star::ThreadImpl::runThread
+[25] 7ff82f0a2774 BaseThreadInitThunk
+[26] 7ff831a20d51 RtlUserThreadStart
+[13:43:31.557] [Info] Application: shutdown...
+[13:43:31.703] [Info] Root: Shutting down Root
+[13:43:31.948] [Error] OpenGL errors during shutdown:  GL_INVALID_VALUE
+[13:43:31.949] [Info] Application: Destroying SDL Window
+[13:43:31.953] [Info] Application: stopped gracefully

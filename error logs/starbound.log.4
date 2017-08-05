@@ -1,0 +1,841 @@
+[13:34:17.271] [Info] Root: Preparing Root...
+[13:34:17.271] [Info] Root: Done preparing Root.
+[13:34:17.271] [Info] Client Version 1.3.2 (windows x86_64) Source ID: 4d70cfed23093a8e5abe06d662c6a5610fefc596 Protocol: 743
+[13:34:17.271] [Info] Root: Scanning for asset sources in directory '..\assets\'
+[13:34:17.827] [Info] Root: Scanning for asset sources in directory '..\mods\'
+[13:34:17.827] [Warn] Root: Unrecognized file in asset directory 'ModPackHelper.log', skipping
+[13:34:17.827] [Warn] Root: Unrecognized file in asset directory 'StarboundModHelper.bat', skipping
+[13:34:17.829] [Warn] Root: Unrecognized file in asset directory 'mods_go_here', skipping
+[13:34:17.831] [Info] Root: Detected asset source named 'base' at '..\assets\packed.pak'
+[13:34:17.831] [Info] Root: Detected asset source named 'Manipulated UI' at '..\mods\ManipulatedUI.pak'
+[13:34:17.831] [Info] Root: Detected asset source named 'Mech Welder' at '..\mods\modgun1.2'
+[13:34:17.831] [Info] Root: Detected asset source named 'SpawnableItemPack' at '..\mods\spawn.pak'
+[13:34:17.831] [Info] Root: Detected asset source named 'MMM' at '..\mods\matter.pak'
+[13:34:17.831] [Info] Root: Detected unnamed asset source at '..\assets\user'
+[13:34:17.831] [Info] Loading assets from: '..\assets\packed.pak'
+[13:34:18.523] [Info] Loading assets from: '..\mods\ManipulatedUI.pak'
+[13:34:18.524] [Info] Loading assets from: '..\mods\modgun1.2'
+[13:34:18.526] [Info] Loading assets from: '..\mods\spawn.pak'
+[13:34:18.528] [Info] Loading assets from: '..\mods\matter.pak'
+[13:34:18.528] [Info] Loading assets from: '..\assets\user'
+[13:34:19.255] [Info] Assets digest is c648cc381988f6038c0d9ed2ebd02cd144e742eb074988d9041ed058c6054786
+[13:34:19.256] [Info] Root: Loaded Assets in 1.98362 seconds
+[13:34:19.260] [Info] Application: Initializing SDL Video
+[13:34:19.286] [Info] Application: Initializing SDL Joystick
+[13:34:19.383] [Info] Application: Initializing SDL Sound
+[13:34:19.527] [Info] Failed to initialize Steam platform services
+[13:34:19.527] [Info] Application: No platform services available
+[13:34:19.527] [Info] Application: Creating SDL Window
+[13:34:19.865] [Info] Application: Enabling VSync with late swap tearing
+[13:34:19.952] [Info] Application: Opened default audio device with 44.1khz / 16 bit stereo audio, 2048 sample size buffer
+[13:34:19.958] [Info] OpenGL version: '4.5.13476 Compatibility Profile Context 22.19.171.1' vendor: 'ATI Technologies Inc.' renderer: 'AMD Radeon (TM) R9 380 Series' shader: '4.50'
+[13:34:19.960] [Info] Application: initialization...
+[13:34:19.961] [Info] Root: Loaded Configuration in 0.00100585 seconds
+[13:34:19.964] [Info] Application: renderer initialization...
+[13:34:19.965] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:34:19.965] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:34:19.967] [Info] Root: Loaded ImageMetadataDatabase in 1.16363e-06 seconds
+[13:34:19.994] [Info] Application: main update loop...
+[13:34:20.012] [Info] Root: Loaded NameGenerator in 0.0132368 seconds
+[13:34:21.444] [Error] Exception caught loading asset: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object, (AssetException) Could not read JSON asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779ee7e4d Star::Assets::workerMain
+[19] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[20] 7ff779ec3c5e Star::ThreadImpl::runThread
+[21] 7ff82f0a2774 BaseThreadInitThunk
+[22] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee436a Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779ee7e4d Star::Assets::workerMain
+[20] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[21] 7ff779ec3c5e Star::ThreadImpl::runThread
+[22] 7ff82f0a2774 BaseThreadInitThunk
+[23] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: bad string, should be '"' at 102:7
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee436a Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779ee7e4d Star::Assets::workerMain
+[15] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[16] 7ff779ec3c5e Star::ThreadImpl::runThread
+[17] 7ff82f0a2774 BaseThreadInitThunk
+[18] 7ff831a20d51 RtlUserThreadStart
+[13:34:21.536] [Error] Error loading object file /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object: (AssetException) Error loading asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a172f84 Star::ObjectDatabase::ObjectDatabase
+[6] 7ff77a2748d5 std::make_shared<Star::ObjectDatabase>
+[7] 7ff77a2798c9 <lambda_ad7e19ff40b932b3042616b2e24a8a33>::operator()
+[8] 7ff77a26b12f std::_Invoker_functor::_Call<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[9] 7ff77a26ef66 std::invoke<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[10] 7ff77a26c9d9 std::_Invoke_ret<std::shared_ptr<Star::ObjectDatabase>,<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[11] 7ff77a27bb26 std::_Func_impl<<lambda_ad7e19ff40b932b3042616b2e24a8a33>,std::allocator<int>,std::shared_ptr<Star::ObjectDatabase> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271843 Star::Root::loadMemberFunction<Star::ObjectDatabase>
+[14] 7ff77a26f789 Star::Root::loadMember<Star::ObjectDatabase>
+[15] 7ff77a280ac2 Star::Root::objectDatabase
+[16] 7ff77a26b3a0 std::_Invoker_pmf_pointer::_Call<std::shared_ptr<Star::CollectionDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[17] 7ff77a26ebd9 std::invoke<std::shared_ptr<Star::VersioningDatabase const > (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[18] 7ff77a26c5ec std::_Invoke_ret<std::shared_ptr<Star::Configuration> (__cdecl Star::Root::*& __ptr64)(void) __ptr64,Star::Root * __ptr64 & __ptr64>
+[19] 7ff77a26b42e std::_Call_binder<std::_Unforced,0,std::shared_ptr<Star::StagehandDatabase const > (__cdecl Star::Root::*)(void) __ptr64,std::tuple<Star::Root * __ptr64>,std::tuple<> >
+[20] 7ff77a26ab8e std::_Binder<std::_Unforced,std::shared_ptr<Star::LiquidsDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const>::operator()<>
+[21] 7ff77a27b592 std::_Func_impl<Star::SwallowReturn<std::_Binder<std::_Unforced,std::shared_ptr<Star::TreasureDatabase const > (__cdecl Star::Root::*)(void) __ptr64,Star::Root * __ptr64 const> >,std::allocator<int>,void>::_Do_call
+[22] 7ff779ebdc1b <lambda_7b083dc4bdd496712d99e51bb49515b5>::operator()
+[23] 7ff779ebea42 Star::WorkerPool::WorkerThread::run
+[24] 7ff779ec3c5e Star::ThreadImpl::runThread
+[25] 7ff82f0a2774 BaseThreadInitThunk
+[26] 7ff831a20d51 RtlUserThreadStart
+[13:34:21.536] [Info] Root: Loaded PlantDatabase in 1.47289 seconds
+[13:34:21.685] [Info] Root: Loaded ObjectDatabase in 1.68603 seconds
+[13:34:21.933] [Info] Root: Loaded MonsterDatabase in 0.2479 seconds
+[13:34:21.977] [Info] Root: Loaded NpcDatabase in 0.0441958 seconds
+[13:34:21.978] [Info] Root: Loaded StagehandDatabase in 0.00103517 seconds
+[13:34:21.983] [Info] Root: Loaded VehicleDatabase in 0.00438248 seconds
+[13:34:22.021] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:22.022] [Info] Root: Loaded PlayerFactory in 0.0393884 seconds
+[13:34:22.109] [Info] Root: Loaded ProjectileDatabase in 0.573169 seconds
+[13:34:22.110] [Info] Root: Loaded VersioningDatabase in 0.000914617 seconds
+[13:34:22.110] [Info] Root: Loaded EntityFactory in 0.0877209 seconds
+[13:34:22.151] [Info] Root: Loaded ParticleDatabase in 0.0408173 seconds
+[13:34:22.400] [Info] Root: Loaded MaterialDatabase in 0.289779 seconds
+[13:34:22.406] [Info] Root: Loaded TerrainDatabase in 0.00578257 seconds
+[13:34:22.443] [Info] Root: Loaded BiomeDatabase in 0.037403 seconds
+[13:34:22.444] [Info] Root: Loaded LiquidsDatabase in 0.000823156 seconds
+[13:34:22.450] [Info] Root: Loaded StatusEffectDatabase in 0.00610257 seconds
+[13:34:22.810] [Info] Root: Loaded DamageDatabase in 0.359788 seconds
+[13:34:22.814] [Info] Root: Loaded EffectSourceDatabase in 0.00427473 seconds
+[13:34:22.820] [Info] Root: Loaded FunctionDatabase in 0.00523613 seconds
+[13:34:22.848] [Info] Root: Loaded TreasureDatabase in 0.0277911 seconds
+[13:34:23.115] [Info] Root: Loaded DungeonDefinitions in 0.267516 seconds
+[13:34:23.115] [Info] Root: Loaded TilesetDatabase in 3.90981e-05 seconds
+[13:34:23.117] [Info] Root: Loaded StatisticsDatabase in 0.00217763 seconds
+[13:34:23.117] [Info] Root: Loaded EmoteProcessor in 7.30763e-05 seconds
+[13:34:23.124] [Info] Root: Loaded SpeciesDatabase in 0.00606859 seconds
+[13:34:23.136] [Info] Root: Loaded QuestTemplateDatabase in 0.0121653 seconds
+[13:34:23.137] [Info] Root: Loaded AiDatabase in 0.001381 seconds
+[13:34:23.138] [Info] Root: Loaded TechDatabase in 0.000952086 seconds
+[13:34:23.144] [Info] Root: Loaded CodexDatabase in 0.00531898 seconds
+[13:34:23.430] [Info] Root: Loaded BehaviorDatabase in 0.286691 seconds
+[13:34:23.433] [Info] Root: Loaded DanceDatabase in 0.00301451 seconds
+[13:34:23.441] [Info] Root: Loaded SpawnTypeDatabase in 0.00800721 seconds
+[13:34:23.446] [Info] Root: Loaded RadioMessageDatabase in 0.00470109 seconds
+[13:34:23.948] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:24.263] [Info] Root: Writing runtime configuration to '..\storage\starbound.config'
+[13:34:25.004] [Info] Root: Loaded ItemDatabase in 2.89557 seconds
+[13:34:25.139] [Info] Root: Loaded CollectionDatabase in 1.69277 seconds
+[13:34:25.406] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.442] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.478] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.514] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.553] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.589] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.623] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.657] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.691] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.726] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.760] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.794] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.829] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.863] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.910] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:25.993] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:34:26.311] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 256
+[13:34:28.340] [Info] UniverseServer: Acquiring universe lock file
+[13:34:28.341] [Info] UniverseServer: Loading settings
+[13:34:28.343] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:34:28.352] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:34:28.352] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:34:28.478] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:34:28.486] [Info] UniverseClient: Joined server as client 1
+[13:34:28.535] [Info] UniverseServer: Reviving player at CelestialWorld:287038785:-979663305:-179254835:3
+[13:34:28.535] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:34:28.577] [Info] UniverseServer: Loading celestial world 287038785:-979663305:-179254835:3
+[13:34:28.715] [Info] Protected dungeonIds for world set to (65524)
+[13:34:28.781] [Info] UniverseServer: Warping player 1 to CelestialWorld:287038785:-979663305:-179254835:3=1937.88.1180
+[13:34:28.826] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:34:28.826] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:34:28.832] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 256
+[13:34:28.832] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 256
+[13:34:37.560] [Info] UniverseClient: Client disconnecting...
+[13:34:37.614] [Info] Client received world stop packet, leaving: Removed
+[13:34:37.705] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[13:34:37.706] [Info] UniverseServer: Stopping idle world CelestialWorld:287038785:-979663305:-179254835:3
+[13:34:38.148] [Info] UniverseServer: Stopping UniverseServer
+[13:34:39.333] [Info] Root: Writing runtime configuration to '..\storage\starbound.config'
+[13:34:49.376] [Info] Root: Writing runtime configuration to '..\storage\starbound.config'
+[13:34:50.083] [Info] UniverseServer: Acquiring universe lock file
+[13:34:50.083] [Info] UniverseServer: Loading settings
+[13:34:50.084] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:34:50.093] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:34:50.093] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:34:50.215] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:34:50.217] [Info] UniverseClient: Joined server as client 1
+[13:34:50.269] [Info] UniverseServer: Reviving player at CelestialWorld:287038785:-979663305:-179254835:3
+[13:34:50.269] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:34:50.286] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:34:50.286] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:34:50.287] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 256
+[13:34:50.287] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 256
+[13:34:50.315] [Info] UniverseServer: Loading celestial world 287038785:-979663305:-179254835:3
+[13:34:50.468] [Info] Protected dungeonIds for world set to (65524)
+[13:34:50.531] [Info] UniverseServer: Warping player 1 to CelestialWorld:287038785:-979663305:-179254835:3=1937.88.1180
+[13:35:07.879] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:35:08.178] [Info] Protected dungeonIds for world set to (65524)
+[13:35:08.702] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:35:08.721] [Info] Client received world stop packet, leaving: Removed
+[13:35:08.773] [Info] UniverseServer: Stopping idle world CelestialWorld:287038785:-979663305:-179254835:3
+[13:35:11.050] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:36:07.587] [Info] Root: Reloading from disk
+[13:36:07.789] [Info] Root: Scanning for asset sources in directory '..\assets\'
+[13:36:07.789] [Info] Chat: Client Star::Root reloaded
+[13:36:07.790] [Info] Root: Loaded Configuration in 0.000965817 seconds
+[13:36:08.332] [Info] Root: Scanning for asset sources in directory '..\mods\'
+[13:36:08.332] [Warn] Root: Unrecognized file in asset directory 'ModPackHelper.log', skipping
+[13:36:08.332] [Warn] Root: Unrecognized file in asset directory 'StarboundModHelper.bat', skipping
+[13:36:08.334] [Warn] Root: Unrecognized file in asset directory 'mods_go_here', skipping
+[13:36:08.336] [Info] Root: Detected asset source named 'base' at '..\assets\packed.pak'
+[13:36:08.336] [Info] Root: Detected asset source named 'Manipulated UI' at '..\mods\ManipulatedUI.pak'
+[13:36:08.336] [Info] Root: Detected asset source named 'Mech Welder' at '..\mods\modgun1.2'
+[13:36:08.336] [Info] Root: Detected asset source named 'SpawnableItemPack' at '..\mods\spawn.pak'
+[13:36:08.336] [Info] Root: Detected asset source named 'MMM' at '..\mods\matter.pak'
+[13:36:08.336] [Info] Root: Detected unnamed asset source at '..\assets\user'
+[13:36:08.336] [Info] Loading assets from: '..\assets\packed.pak'
+[13:36:09.017] [Info] Loading assets from: '..\mods\ManipulatedUI.pak'
+[13:36:09.017] [Info] Loading assets from: '..\mods\modgun1.2'
+[13:36:09.019] [Info] Loading assets from: '..\mods\spawn.pak'
+[13:36:09.021] [Info] Loading assets from: '..\mods\matter.pak'
+[13:36:09.021] [Info] Loading assets from: '..\assets\user'
+[13:36:09.707] [Info] Assets digest is 828f5326e3d0825fefdad2170c7931896e8e5c025bf1332109d5dd0f4a30db1e
+[13:36:09.707] [Info] Root: Loaded Assets in 1.91776 seconds
+[13:36:09.713] [Info] Root: Loaded FunctionDatabase in 1.9235 seconds
+[13:36:09.741] [Info] Root: Loaded ParticleDatabase in 0.0333223 seconds
+[13:36:09.743] [Info] Root: Loaded ImageMetadataDatabase in 1.6291e-06 seconds
+[13:36:09.743] [Info] Root: Loaded QuestTemplateDatabase in 0.0219457 seconds
+[13:36:09.773] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:36:09.774] [Info] Root: Loaded PlayerFactory in 0.060748 seconds
+[13:36:09.979] [Info] Root: Loaded MonsterDatabase in 0.205026 seconds
+[13:36:10.007] [Info] Root: Loaded MaterialDatabase in 0.299316 seconds
+[13:36:10.008] [Info] Root: Loaded LiquidsDatabase in 0.300975 seconds
+[13:36:10.034] [Error] Exception caught loading asset: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object, (AssetException) Could not read JSON asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779ee7e4d Star::Assets::workerMain
+[19] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[20] 7ff779ec3c5e Star::ThreadImpl::runThread
+[21] 7ff82f0a2774 BaseThreadInitThunk
+[22] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee436a Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779ee7e4d Star::Assets::workerMain
+[20] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[21] 7ff779ec3c5e Star::ThreadImpl::runThread
+[22] 7ff82f0a2774 BaseThreadInitThunk
+[23] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: bad string, should be '"' at 102:7
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee436a Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779ee7e4d Star::Assets::workerMain
+[15] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[16] 7ff779ec3c5e Star::ThreadImpl::runThread
+[17] 7ff82f0a2774 BaseThreadInitThunk
+[18] 7ff831a20d51 RtlUserThreadStart
+[13:36:11.312] [Error] Error loading object file /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object: (AssetException) Error loading asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a172f84 Star::ObjectDatabase::ObjectDatabase
+[6] 7ff77a2748d5 std::make_shared<Star::ObjectDatabase>
+[7] 7ff77a2798c9 <lambda_ad7e19ff40b932b3042616b2e24a8a33>::operator()
+[8] 7ff77a26b12f std::_Invoker_functor::_Call<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[9] 7ff77a26ef66 std::invoke<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[10] 7ff77a26c9d9 std::_Invoke_ret<std::shared_ptr<Star::ObjectDatabase>,<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[11] 7ff77a27bb26 std::_Func_impl<<lambda_ad7e19ff40b932b3042616b2e24a8a33>,std::allocator<int>,std::shared_ptr<Star::ObjectDatabase> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271843 Star::Root::loadMemberFunction<Star::ObjectDatabase>
+[14] 7ff77a26f789 Star::Root::loadMember<Star::ObjectDatabase>
+[15] 7ff77a280ac2 Star::Root::objectDatabase
+[16] 7ff77a0592a0 Star::ItemDatabase::addObjectItems
+[17] 7ff77a0537af Star::ItemDatabase::ItemDatabase
+[18] 7ff77a2745b5 std::make_shared<Star::ItemDatabase>
+[19] 7ff77a279e39 <lambda_c979fe2661440bde921b022a5da87f15>::operator()
+[20] 7ff77a26b24f std::_Invoker_functor::_Call<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[21] 7ff77a26f026 std::invoke<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[22] 7ff77a26c8e9 std::_Invoke_ret<std::shared_ptr<Star::ItemDatabase>,<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[23] 7ff77a27bc46 std::_Func_impl<<lambda_c979fe2661440bde921b022a5da87f15>,std::allocator<int>,std::shared_ptr<Star::ItemDatabase> >::_Do_call
+[24] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[25] 7ff77a2711b3 Star::Root::loadMemberFunction<Star::ItemDatabase>
+[26] 7ff77a26f5f9 Star::Root::loadMember<Star::ItemDatabase>
+[27] 7ff77a2806a2 Star::Root::itemDatabase
+[28] 7ff77a57e41c Star::LuaBindings::RootCallbacks::itemConfig
+[29] 7ff77a570311 std::_Invoker_functor::_Call<Star::Json (__cdecl*const & __ptr64)(Star::Root * __ptr64,Star::Json const & __ptr64,Star::Maybe<float> const & __ptr64,Star::Maybe<unsigned __int64> const & __ptr64),Star::Root * __ptr64 const & __ptr64,Star::Json,Star::Maybe<float>,Star::Maybe<unsigned __int64> >
+[30] 7ff77a5729fa std::invoke<Star::Json (__cdecl*const & __ptr64)(Star::Root * __ptr64,Star::Json const & __ptr64,Star::Maybe<float> const & __ptr64,Star::Maybe<unsigned __int64> const & __ptr64),Star::Root * __ptr64 const & __ptr64,Star::Json,Star::Maybe<float>,Star::Maybe<unsigned __int64> >
+[31] 7ff77a570efb std::_Invoke_ret<Star::Json (__cdecl*const & __ptr64)(Star::Root * __ptr64,Star::Json const & __ptr64,Star::Maybe<float> const & __ptr64,Star::Maybe<unsigned __int64> const & __ptr64),Star::Root * __ptr64 const & __ptr64,Star::Json,Star::Maybe<float>,Star::Maybe<unsigned __int64> >
+[32] 7ff77a570a3a std::_Call_binder<std::_Unforced,0,1,2,3,Star::Json (__cdecl*const)(Star::Root * __ptr64,Star::Json const & __ptr64,Star::Maybe<float> const & __ptr64,Star::Maybe<unsigned __int64> const & __ptr64),std::tuple<Star::Root * __ptr64,std::_Ph<1>,std::_Ph<2>,std::_Ph<3> > const ,std::tuple<Star::Json && __ptr64,Star::Maybe<float> && __ptr64,Star::Maybe<unsigned __int64> && __ptr64> >
+[33] 7ff77a56edaf std::_Binder<std::_Unforced,Star::Json (__cdecl&)(Star::Root * __ptr64,Star::Json const & __ptr64,Star::Maybe<float> const & __ptr64,Star::Maybe<unsigned __int64> const & __ptr64),Star::Root * __ptr64 & __ptr64,std::_Ph<1> const & __ptr64,std::_Ph<2> const & __ptr64,std::_Ph<3> const & __ptr64>::operator()<Star::Json,Star::Maybe<float>,Star::Maybe<unsigned __int64> >
+[34] 7ff77a57af86 <lambda_d79f2d99aa33c015777ee90774ba93a8>::operator()
+[35] 7ff77a56fb9f std::_Invoker_functor::_Call<<lambda_d79f2d99aa33c015777ee90774ba93a8> & __ptr64,Star::LuaEngine & __ptr64,unsigned __int64,Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> * __ptr64>
+[36] 7ff77a572730 std::invoke<<lambda_d79f2d99aa33c015777ee90774ba93a8> & __ptr64,Star::LuaEngine & __ptr64,unsigned __int64,Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> * __ptr64>
+[37] 7ff77a571bf9 std::_Invoke_ret<Star::Variant<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData>,Star::LuaVariadic<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> > >,<lambda_d79f2d99aa33c015777ee90774ba93a8> & __ptr64,Star::LuaEngine & __ptr64,unsigned __int64,Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> * __ptr64>
+[38] 7ff77a57c72b std::_Func_impl<<lambda_d79f2d99aa33c015777ee90774ba93a8>,std::allocator<int>,Star::Variant<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData>,Star::LuaVariadic<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> > >,Star::LuaEngine & __ptr64,unsigned __int64,Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> * __ptr64>::_Do_call
+[39] 7ff779e9481d std::_Func_class<Star::Variant<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData>,Star::LuaVariadic<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> > >,Star::LuaEngine & __ptr64,unsigned __int64,Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> * __ptr64>::operator()
+[40] 7ff779e937af <lambda_a03bcae4599b53751a446949639a4d5e>::operator()
+[41] 7ff779e1b938 luaD_precall
+[42] 7ff779e346e1 luaV_execute
+[43] 7ff779e1b443 luaD_call
+[44] 7ff779e1bc1b luaD_rawrunprotected
+[45] 7ff779e1b650 luaD_pcall
+[46] 7ff779e11b64 lua_pcallk
+[47] 7ff779e9b930 Star::LuaEngine::pcallWithTraceback
+[48] 7ff77a089302 Star::LuaEngine::callFunction<>
+[49] 7ff77a08c712 Star::LuaFunction::invoke<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> >
+[50] 7ff77a532273 Star::LuaContext::invokePath<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData> >
+[51] 7ff77a533e0b Star::LuaBaseComponent::init
+[52] 7ff77a5335bc Star::LuaBaseComponent::checkInitialization
+[53] 7ff77a08ca62 Star::LuaBaseComponent::invoke<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData>,float>
+[54] 7ff77a09394c Star::LuaUpdatableComponent<Star::LuaWorldComponent<Star::LuaBaseComponent> >::update<Star::Variant<Star::Empty,bool,__int64,double,Star::String,Star::LuaTable,Star::LuaFunction,Star::LuaThread,Star::LuaUserData>,float>
+[55] 7ff77a1e13ac Star::PlayerDeployment::update
+[56] 7ff77a1d1f20 Star::Player::update
+[57] 7ff77a3fa178 <lambda_9fc580ae40b93070d912cafafa15880e>::operator()
+[58] 7ff77a01a5d7 Star::EntityMap::updateAllEntities
+[59] 7ff77a412659 Star::WorldClient::update
+[60] 7ff77a37b753 Star::UniverseClient::update
+[61] 7ff779e0e557 Star::ClientApplication::updateRunning
+[62] 7ff779e0ce4f Star::ClientApplication::update
+[63] 7ff77a60aa72 Star::SdlPlatform::run
+[64] 7ff77a60ac2d Star::runMainApplication
+[65] 7ff779e0ff76 WinMain
+[66] 7ff77a7f8daf __scrt_common_main_seh
+[67] 7ff82f0a2774 BaseThreadInitThunk
+[68] 7ff831a20d51 RtlUserThreadStart
+[13:36:11.321] [Info] Root: Loaded ObjectDatabase in 1.41601 seconds
+[13:36:11.741] [Info] Root: Loaded ProjectileDatabase in 0.419584 seconds
+[13:36:11.779] [Info] Root: Loaded NpcDatabase in 0.0384109 seconds
+[13:36:11.782] [Info] Root: Loaded VehicleDatabase in 0.00282182 seconds
+[13:36:11.783] [Info] Root: Loaded VersioningDatabase in 0.00067677 seconds
+[13:36:11.783] [Info] Root: Loaded EntityFactory in 2.0697 seconds
+[13:36:12.742] [Info] Root: Loaded CodexDatabase in 0.00465082 seconds
+[13:36:12.825] [Error] Could not apply patch from file /player.config.patch in source: ..\mods\modgun1.2.  Caused by: (JsonPatchException) Could not apply patch to base. (JsonPatchException) Could not apply operation to base. (TraversalException) No such key 'defaultblueprints' in pathApply("/defaultblueprints/tier1/-")
+[13:36:13.834] [Info] Root: Loaded ItemDatabase in 4.07229 seconds
+[13:36:13.867] [Info] Root: Loaded StatusEffectDatabase in 0.0054493 seconds
+[13:36:50.072] [Info] Root: Reloading from disk
+[13:36:50.211] [Info] Root: Scanning for asset sources in directory '..\assets\'
+[13:36:50.212] [Info] Chat: Client Star::Root reloaded
+[13:36:50.213] [Info] Root: Loaded Configuration in 0.00105379 seconds
+[13:36:50.752] [Info] Root: Scanning for asset sources in directory '..\mods\'
+[13:36:50.753] [Warn] Root: Unrecognized file in asset directory 'ModPackHelper.log', skipping
+[13:36:50.753] [Warn] Root: Unrecognized file in asset directory 'StarboundModHelper.bat', skipping
+[13:36:50.754] [Warn] Root: Unrecognized file in asset directory 'mods_go_here', skipping
+[13:36:50.756] [Info] Root: Detected asset source named 'base' at '..\assets\packed.pak'
+[13:36:50.756] [Info] Root: Detected asset source named 'Manipulated UI' at '..\mods\ManipulatedUI.pak'
+[13:36:50.756] [Info] Root: Detected asset source named 'Mech Welder' at '..\mods\modgun1.2'
+[13:36:50.756] [Info] Root: Detected asset source named 'SpawnableItemPack' at '..\mods\spawn.pak'
+[13:36:50.756] [Info] Root: Detected asset source named 'MMM' at '..\mods\matter.pak'
+[13:36:50.756] [Info] Root: Detected unnamed asset source at '..\assets\user'
+[13:36:50.756] [Info] Loading assets from: '..\assets\packed.pak'
+[13:36:51.436] [Info] Loading assets from: '..\mods\ManipulatedUI.pak'
+[13:36:51.437] [Info] Loading assets from: '..\mods\modgun1.2'
+[13:36:51.439] [Info] Loading assets from: '..\mods\spawn.pak'
+[13:36:51.441] [Info] Loading assets from: '..\mods\matter.pak'
+[13:36:51.441] [Info] Loading assets from: '..\assets\user'
+[13:36:52.127] [Info] Assets digest is c829aff556f02af2bedfc57907d71e02cafcf092237e60450aee118eebf2af1f
+[13:36:52.127] [Info] Root: Loaded Assets in 1.91634 seconds
+[13:36:52.157] [Info] Root: Loaded ParticleDatabase in 0.0291493 seconds
+[13:36:52.160] [Info] Root: Loaded ImageMetadataDatabase in 1.16364e-06 seconds
+[13:36:52.267] [Error] Exception caught loading asset: /player.config, (AssetException) Could not read JSON asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779edfe1b Star::Assets::getAsset
+[19] 7ff779ee0dd2 Star::Assets::json
+[20] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[21] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[22] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[23] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[24] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[25] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[26] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[27] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[28] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[29] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[30] 7ff77a280cd2 Star::Root::playerFactory
+[31] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[32] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[33] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[34] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[35] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[36] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[37] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[38] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[39] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[40] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[41] 7ff77a27edd2 Star::Root::entityFactory
+[42] 7ff77a47f823 Star::WorldServer::handleIncomingPackets
+[43] 7ff77a494a3b Star::WorldServerThread::update
+[44] 7ff77a494558 Star::WorldServerThread::run
+[45] 7ff779ec3c5e Star::ThreadImpl::runThread
+[46] 7ff82f0a2774 BaseThreadInitThunk
+[47] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee43f6 Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779edfe1b Star::Assets::getAsset
+[20] 7ff779ee0dd2 Star::Assets::json
+[21] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[22] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[23] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[24] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[25] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[26] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[27] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[28] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[29] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[30] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[31] 7ff77a280cd2 Star::Root::playerFactory
+[32] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[33] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[34] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[35] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[36] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[37] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[38] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[39] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[40] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[41] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[42] 7ff77a27edd2 Star::Root::entityFactory
+[43] 7ff77a47f823 Star::WorldServer::handleIncomingPackets
+[44] 7ff77a494a3b Star::WorldServerThread::update
+[45] 7ff77a494558 Star::WorldServerThread::run
+[46] 7ff779ec3c5e Star::ThreadImpl::runThread
+[47] 7ff82f0a2774 BaseThreadInitThunk
+[48] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: unexpected character parsing word at 5:1
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee43f6 Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779edfe1b Star::Assets::getAsset
+[15] 7ff779ee0dd2 Star::Assets::json
+[16] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[17] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[18] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[19] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[20] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[21] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[22] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[23] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[24] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[25] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[26] 7ff77a280cd2 Star::Root::playerFactory
+[27] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[28] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[29] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[30] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[31] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[32] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[33] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[34] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[35] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[36] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[37] 7ff77a27edd2 Star::Root::entityFactory
+[38] 7ff77a47f823 Star::WorldServer::handleIncomingPackets
+[39] 7ff77a494a3b Star::WorldServerThread::update
+[40] 7ff77a494558 Star::WorldServerThread::run
+[41] 7ff779ec3c5e Star::ThreadImpl::runThread
+[42] 7ff82f0a2774 BaseThreadInitThunk
+[43] 7ff831a20d51 RtlUserThreadStart
+[13:36:52.294] [Error] WorldServerThread exception caught handling incoming packets for client 1: (AssetException) Error loading asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[6] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[7] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[8] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[9] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[10] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[11] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[14] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[15] 7ff77a280cd2 Star::Root::playerFactory
+[16] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[17] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[18] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[19] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[20] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[21] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[22] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[23] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[24] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[25] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[26] 7ff77a27edd2 Star::Root::entityFactory
+[27] 7ff77a47f823 Star::WorldServer::handleIncomingPackets
+[28] 7ff77a494a3b Star::WorldServerThread::update
+[29] 7ff77a494558 Star::WorldServerThread::run
+[30] 7ff779ec3c5e Star::ThreadImpl::runThread
+[31] 7ff82f0a2774 BaseThreadInitThunk
+[32] 7ff831a20d51 RtlUserThreadStart
+[13:36:52.307] [Info] Root: Loaded FunctionDatabase in 0.00490938 seconds
+[13:36:52.952] [Error] WorldServerThread exception caught: (WorldStorageException) WorldStorage exception during tick
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff77a498180 Star::WorldStorageException::WorldStorageException
+[4] 7ff77a8a2984 `Star::WorldStorage::tick'::`1'::catch$693
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff77a49ffbb Star::WorldStorage::tick
+[9] 7ff77a48ee93 Star::WorldServer::update
+[10] 7ff77a494b66 Star::WorldServerThread::update
+[11] 7ff77a494558 Star::WorldServerThread::run
+[12] 7ff779ec3c5e Star::ThreadImpl::runThread
+[13] 7ff82f0a2774 BaseThreadInitThunk
+[14] 7ff831a20d51 RtlUserThreadStart
+Caused by: (AssetException) Error loading asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[6] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[7] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[8] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[9] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[10] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[11] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[14] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[15] 7ff77a280cd2 Star::Root::playerFactory
+[16] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[17] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[18] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[19] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[20] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[21] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[22] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[23] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[24] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[25] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[26] 7ff77a27edd2 Star::Root::entityFactory
+[27] 7ff77a49ffbb Star::WorldStorage::tick
+[28] 7ff77a48ee93 Star::WorldServer::update
+[29] 7ff77a494b66 Star::WorldServerThread::update
+[30] 7ff77a494558 Star::WorldServerThread::run
+[31] 7ff779ec3c5e Star::ThreadImpl::runThread
+[32] 7ff82f0a2774 BaseThreadInitThunk
+[33] 7ff831a20d51 RtlUserThreadStart
+[13:36:53.090] [Info] Root: Loaded MaterialDatabase in 0.9622 seconds
+[13:36:53.090] [Info] Root: Loaded LiquidsDatabase in 0.963025 seconds
+[13:36:53.101] [Info] Root: Loaded VersioningDatabase in 0.000838516 seconds
+[13:36:53.392] [Error] WorldServerThread exception caught: (WorldStorageException) WorldStorage exception during readChunks
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff77a498180 Star::WorldStorageException::WorldStorageException
+[4] 7ff77a8a249d `Star::WorldStorage::readChunks'::`1'::catch$135
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff77a49e1ca Star::WorldStorage::readChunks
+[9] 7ff77a486e2c Star::WorldServer::readChunks
+[10] 7ff77a493606 Star::WorldServerThread::readChunks
+[11] 7ff77a3a3763 Star::UniverseServer::doDisconnection
+[12] 7ff77a3ad6d2 Star::UniverseServer::reapConnections
+[13] 7ff77a3af60e Star::UniverseServer::run
+[14] 7ff779ec3c5e Star::ThreadImpl::runThread
+[15] 7ff82f0a2774 BaseThreadInitThunk
+[16] 7ff831a20d51 RtlUserThreadStart
+Caused by: (AssetException) Error loading asset /player.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a1e25d6 Star::PlayerFactory::PlayerFactory
+[6] 7ff77a274b55 std::make_shared<Star::PlayerFactory>
+[7] 7ff77a279959 <lambda_bcde295537fda6b88b516a3f8db4b4d0>::operator()
+[8] 7ff77a26b1bf std::_Invoker_functor::_Call<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[9] 7ff77a26efc6 std::invoke<<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[10] 7ff77a26ca99 std::_Invoke_ret<std::shared_ptr<Star::PlayerFactory>,<lambda_bcde295537fda6b88b516a3f8db4b4d0> & __ptr64>
+[11] 7ff77a27bbb6 std::_Func_impl<<lambda_bcde295537fda6b88b516a3f8db4b4d0>,std::allocator<int>,std::shared_ptr<Star::PlayerFactory> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271d83 Star::Root::loadMemberFunction<Star::PlayerFactory>
+[14] 7ff77a26f8c9 Star::Root::loadMember<Star::PlayerFactory>
+[15] 7ff77a280cd2 Star::Root::playerFactory
+[16] 7ff77a00a334 Star::EntityFactory::EntityFactory
+[17] 7ff77a274345 std::make_shared<Star::EntityFactory>
+[18] 7ff77a279899 <lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>::operator()
+[19] 7ff77a26b0ff std::_Invoker_functor::_Call<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[20] 7ff77a26ef46 std::invoke<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[21] 7ff77a26c859 std::_Invoke_ret<std::shared_ptr<Star::EntityFactory>,<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb> & __ptr64>
+[22] 7ff77a27baf6 std::_Func_impl<<lambda_ab8c3a04f065313e1ea83dc35ffb2ceb>,std::allocator<int>,std::shared_ptr<Star::EntityFactory> >::_Do_call
+[23] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[24] 7ff77a270dc3 Star::Root::loadMemberFunction<Star::EntityFactory>
+[25] 7ff77a26f509 Star::Root::loadMember<Star::EntityFactory>
+[26] 7ff77a27edd2 Star::Root::entityFactory
+[27] 7ff77a49f9e9 Star::WorldStorage::syncSector
+[28] 7ff77a49e1ca Star::WorldStorage::readChunks
+[29] 7ff77a486e2c Star::WorldServer::readChunks
+[30] 7ff77a493606 Star::WorldServerThread::readChunks
+[31] 7ff77a3a3763 Star::UniverseServer::doDisconnection
+[32] 7ff77a3ad6d2 Star::UniverseServer::reapConnections
+[33] 7ff77a3af60e Star::UniverseServer::run
+[34] 7ff779ec3c5e Star::ThreadImpl::runThread
+[35] 7ff82f0a2774 BaseThreadInitThunk
+[36] 7ff831a20d51 RtlUserThreadStart
+[13:36:53.403] [Error] Exception caught loading asset: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object, (AssetException) Could not read JSON asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779ee7e4d Star::Assets::workerMain
+[19] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[20] 7ff779ec3c5e Star::ThreadImpl::runThread
+[21] 7ff82f0a2774 BaseThreadInitThunk
+[22] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Cannot parse json file: /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed7a60 Star::JsonParsingException::JsonParsingException
+[4] 7ff77a80b666 `Star::Assets::readJson'::`1'::catch$264
+[5] 7ff81b23c220 _C_specific_handler
+[6] 7ff81b2329b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ee436a Star::Assets::readJson
+[9] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[10] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[13] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[14] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[15] 7ff779ee3d68 Star::Assets::processAssetData
+[16] 7ff779ee1e18 Star::Assets::loadJson
+[17] 7ff779ee111d Star::Assets::loadAsset
+[18] 7ff779ede32f Star::Assets::doLoad
+[19] 7ff779ee7e4d Star::Assets::workerMain
+[20] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[21] 7ff779ec3c5e Star::ThreadImpl::runThread
+[22] 7ff82f0a2774 BaseThreadInitThunk
+[23] 7ff831a20d51 RtlUserThreadStart
+Caused by: (JsonParsingException) Error parsing json: bad string, should be '"' at 102:7
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed440c Star::inputUtf8Json<char * __ptr64>
+[3] 7ff779ee436a Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779ee7e4d Star::Assets::workerMain
+[15] 7ff779ec3737 <lambda_acdb4815e022f76f36408ff78907d178>::operator()
+[16] 7ff779ec3c5e Star::ThreadImpl::runThread
+[17] 7ff82f0a2774 BaseThreadInitThunk
+[18] 7ff831a20d51 RtlUserThreadStart
+[13:36:53.471] [Error] Error loading object file /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object: (AssetException) Error loading asset /objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingmechworkshop.object
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff77a172f84 Star::ObjectDatabase::ObjectDatabase
+[6] 7ff77a2748d5 std::make_shared<Star::ObjectDatabase>
+[7] 7ff77a2798c9 <lambda_ad7e19ff40b932b3042616b2e24a8a33>::operator()
+[8] 7ff77a26b12f std::_Invoker_functor::_Call<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[9] 7ff77a26ef66 std::invoke<<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[10] 7ff77a26c9d9 std::_Invoke_ret<std::shared_ptr<Star::ObjectDatabase>,<lambda_ad7e19ff40b932b3042616b2e24a8a33> & __ptr64>
+[11] 7ff77a27bb26 std::_Func_impl<<lambda_ad7e19ff40b932b3042616b2e24a8a33>,std::allocator<int>,std::shared_ptr<Star::ObjectDatabase> >::_Do_call
+[12] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[13] 7ff77a271843 Star::Root::loadMemberFunction<Star::ObjectDatabase>
+[14] 7ff77a26f789 Star::Root::loadMember<Star::ObjectDatabase>
+[15] 7ff77a280ac2 Star::Root::objectDatabase
+[16] 7ff77a0592a0 Star::ItemDatabase::addObjectItems
+[17] 7ff77a0537af Star::ItemDatabase::ItemDatabase
+[18] 7ff77a2745b5 std::make_shared<Star::ItemDatabase>
+[19] 7ff77a279e39 <lambda_c979fe2661440bde921b022a5da87f15>::operator()
+[20] 7ff77a26b24f std::_Invoker_functor::_Call<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[21] 7ff77a26f026 std::invoke<<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[22] 7ff77a26c8e9 std::_Invoke_ret<std::shared_ptr<Star::ItemDatabase>,<lambda_c979fe2661440bde921b022a5da87f15> & __ptr64>
+[23] 7ff77a27bc46 std::_Func_impl<<lambda_c979fe2661440bde921b022a5da87f15>,std::allocator<int>,std::shared_ptr<Star::ItemDatabase> >::_Do_call
+[24] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[25] 7ff77a2711b3 Star::Root::loadMemberFunction<Star::ItemDatabase>
+[26] 7ff77a26f5f9 Star::Root::loadMember<Star::ItemDatabase>
+[27] 7ff77a2806a2 Star::Root::itemDatabase
+[28] 7ff77a406d84 Star::WorldClient::handleIncomingPackets
+[29] 7ff77a37a1df Star::UniverseClient::handlePackets
+[30] 7ff77a37b69f Star::UniverseClient::update
+[31] 7ff779e0e557 Star::ClientApplication::updateRunning
+[32] 7ff779e0ce4f Star::ClientApplication::update
+[33] 7ff77a60aa72 Star::SdlPlatform::run
+[34] 7ff77a60ac2d Star::runMainApplication
+[35] 7ff779e0ff76 WinMain
+[36] 7ff77a7f8daf __scrt_common_main_seh
+[37] 7ff82f0a2774 BaseThreadInitThunk
+[38] 7ff831a20d51 RtlUserThreadStart
+[13:36:53.476] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: Incoming client packet has caused exception
+[13:36:53.477] [Error] UniverseServer: World ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1 has stopped due to an error
+[13:36:53.576] [Info] Root: Loaded ObjectDatabase in 0.325996 seconds

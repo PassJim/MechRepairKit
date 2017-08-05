@@ -1,0 +1,350 @@
+[13:53:40.720] [Info] Root: Preparing Root...
+[13:53:40.720] [Info] Root: Done preparing Root.
+[13:53:40.720] [Info] Client Version 1.3.2 (windows x86_64) Source ID: 4d70cfed23093a8e5abe06d662c6a5610fefc596 Protocol: 743
+[13:53:40.720] [Info] Root: Scanning for asset sources in directory '..\assets\'
+[13:53:41.276] [Info] Root: Scanning for asset sources in directory '..\mods\'
+[13:53:41.277] [Warn] Root: Unrecognized file in asset directory 'ModPackHelper.log', skipping
+[13:53:41.277] [Warn] Root: Unrecognized file in asset directory 'StarboundModHelper.bat', skipping
+[13:53:41.279] [Warn] Root: Unrecognized file in asset directory 'mods_go_here', skipping
+[13:53:41.280] [Info] Root: Detected asset source named 'base' at '..\assets\packed.pak'
+[13:53:41.280] [Info] Root: Detected asset source named 'Manipulated UI' at '..\mods\ManipulatedUI.pak'
+[13:53:41.281] [Info] Root: Detected asset source named 'Mech Welder' at '..\mods\modgun1.2'
+[13:53:41.281] [Info] Root: Detected asset source named 'SpawnableItemPack' at '..\mods\spawn.pak'
+[13:53:41.281] [Info] Root: Detected asset source named 'MMM' at '..\mods\matter.pak'
+[13:53:41.281] [Info] Root: Detected unnamed asset source at '..\assets\user'
+[13:53:41.281] [Info] Loading assets from: '..\assets\packed.pak'
+[13:53:41.989] [Info] Loading assets from: '..\mods\ManipulatedUI.pak'
+[13:53:41.990] [Info] Loading assets from: '..\mods\modgun1.2'
+[13:53:41.992] [Info] Loading assets from: '..\mods\spawn.pak'
+[13:53:41.994] [Info] Loading assets from: '..\mods\matter.pak'
+[13:53:41.994] [Info] Loading assets from: '..\assets\user'
+[13:53:42.703] [Info] Assets digest is f41a46eaeed793945e61f176b952d2895ee08febaa733f171f058ad5d4a50c5e
+[13:53:42.703] [Info] Root: Loaded Assets in 1.98237 seconds
+[13:53:42.708] [Info] Application: Initializing SDL Video
+[13:53:42.734] [Info] Application: Initializing SDL Joystick
+[13:53:42.829] [Info] Application: Initializing SDL Sound
+[13:53:42.927] [Info] Failed to initialize Steam platform services
+[13:53:42.927] [Info] Application: No platform services available
+[13:53:42.927] [Info] Application: Creating SDL Window
+[13:53:43.213] [Info] Application: Enabling VSync with late swap tearing
+[13:53:43.247] [Info] Application: Opened default audio device with 44.1khz / 16 bit stereo audio, 2048 sample size buffer
+[13:53:43.253] [Info] OpenGL version: '4.5.13476 Compatibility Profile Context 22.19.171.1' vendor: 'ATI Technologies Inc.' renderer: 'AMD Radeon (TM) R9 380 Series' shader: '4.50'
+[13:53:43.254] [Info] Application: initialization...
+[13:53:43.255] [Info] Root: Loaded Configuration in 0.00102865 seconds
+[13:53:43.259] [Info] Application: renderer initialization...
+[13:53:43.260] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:53:43.260] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:53:43.262] [Info] Root: Loaded ImageMetadataDatabase in 1.39636e-06 seconds
+[13:53:43.286] [Info] Application: main update loop...
+[13:53:43.307] [Info] Root: Loaded NameGenerator in 0.0136992 seconds
+[13:53:43.460] [Info] Root: Loaded PlantDatabase in 0.15325 seconds
+[13:53:43.651] [Info] Root: Loaded ObjectDatabase in 0.357945 seconds
+[13:53:43.895] [Info] Root: Loaded MonsterDatabase in 0.243888 seconds
+[13:53:43.940] [Info] Root: Loaded NpcDatabase in 0.0451318 seconds
+[13:53:43.941] [Info] Root: Loaded StagehandDatabase in 0.00116876 seconds
+[13:53:43.946] [Info] Root: Loaded VehicleDatabase in 0.00431057 seconds
+[13:53:43.949] [Info] Root: Loaded PlayerFactory in 0.00360331 seconds
+[13:53:44.055] [Info] Root: Loaded ProjectileDatabase in 0.595453 seconds
+[13:53:44.056] [Info] Root: Loaded VersioningDatabase in 0.000944174 seconds
+[13:53:44.057] [Info] Root: Loaded EntityFactory in 0.10706 seconds
+[13:53:44.101] [Info] Root: Loaded ParticleDatabase in 0.0439498 seconds
+[13:53:44.361] [Info] Root: Loaded MaterialDatabase in 0.304771 seconds
+[13:53:44.367] [Info] Root: Loaded TerrainDatabase in 0.00565015 seconds
+[13:53:44.405] [Info] Root: Loaded BiomeDatabase in 0.0382333 seconds
+[13:53:44.406] [Info] Root: Loaded LiquidsDatabase in 0.000953715 seconds
+[13:53:44.414] [Info] Root: Loaded StatusEffectDatabase in 0.00721221 seconds
+[13:53:44.796] [Info] Root: Loaded DamageDatabase in 0.382307 seconds
+[13:53:44.800] [Info] Root: Loaded EffectSourceDatabase in 0.00400477 seconds
+[13:53:44.805] [Info] Root: Loaded FunctionDatabase in 0.00529733 seconds
+[13:53:44.835] [Info] Root: Loaded TreasureDatabase in 0.0296278 seconds
+[13:53:45.163] [Info] Root: Loaded DungeonDefinitions in 0.3282 seconds
+[13:53:45.163] [Info] Root: Loaded TilesetDatabase in 4.18909e-05 seconds
+[13:53:45.165] [Info] Root: Loaded StatisticsDatabase in 0.00207895 seconds
+[13:53:45.166] [Info] Root: Loaded EmoteProcessor in 8.21527e-05 seconds
+[13:53:45.174] [Info] Root: Loaded SpeciesDatabase in 0.00835164 seconds
+[13:53:45.189] [Info] Root: Loaded QuestTemplateDatabase in 0.0147893 seconds
+[13:53:45.190] [Info] Root: Loaded AiDatabase in 0.0015602 seconds
+[13:53:45.192] [Info] Root: Loaded TechDatabase in 0.0011022 seconds
+[13:53:45.197] [Info] Root: Loaded CodexDatabase in 0.0055275 seconds
+[13:53:45.508] [Info] Root: Loaded BehaviorDatabase in 0.31014 seconds
+[13:53:45.512] [Info] Root: Loaded DanceDatabase in 0.00391284 seconds
+[13:53:45.518] [Info] Root: Loaded SpawnTypeDatabase in 0.00586938 seconds
+[13:53:45.522] [Info] Root: Loaded RadioMessageDatabase in 0.00385978 seconds
+[13:53:47.029] [Info] Root: Loaded ItemDatabase in 2.97322 seconds
+[13:53:47.161] [Info] Root: Loaded CollectionDatabase in 1.6394 seconds
+[13:53:47.706] [Info] Root: Writing runtime configuration to '..\storage\starbound.config'
+[13:53:47.847] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:53:51.173] [Info] UniverseServer: Acquiring universe lock file
+[13:53:51.174] [Info] UniverseServer: Loading settings
+[13:53:51.176] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:53:51.185] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:53:51.185] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:53:51.310] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:53:51.319] [Info] UniverseClient: Joined server as client 1
+[13:53:51.368] [Info] UniverseServer: Reviving player at ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:53:51.368] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:53:51.410] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:53:51.660] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:53:51.661] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:53:51.667] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:53:51.667] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:53:51.674] [Info] Protected dungeonIds for world set to (65524)
+[13:53:52.014] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1=1073.96.1024
+[13:55:17.365] [Error] Exception caught loading asset: /interface/windowconfig/craftingmechworkshop.config, (AssetException) Could not read JSON asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ec5fc8 Star::StarException::StarException
+[3] 7ff779ed6b60 Star::AssetException::AssetException
+[4] 7ff77a80a391 `<lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()'::`1'::catch$25
+[5] 7ff828cdc220 _C_specific_handler
+[6] 7ff828cd29b2 _FrameUnwindFilter
+[7] 7ff831a59603 RtlCaptureContext
+[8] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[9] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[10] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[11] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[12] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[13] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[14] 7ff779ee3d68 Star::Assets::processAssetData
+[15] 7ff779ee1e18 Star::Assets::loadJson
+[16] 7ff779ee111d Star::Assets::loadAsset
+[17] 7ff779ede32f Star::Assets::doLoad
+[18] 7ff779edfe1b Star::Assets::getAsset
+[19] 7ff779ee0dd2 Star::Assets::json
+[20] 7ff779edecae Star::Assets::fetchJson
+[21] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[22] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[23] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[24] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[25] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[26] 7ff779e0ce4f Star::ClientApplication::update
+[27] 7ff77a60aa72 Star::SdlPlatform::run
+[28] 7ff77a60ac2d Star::runMainApplication
+[29] 7ff779e0ff76 WinMain
+[30] 7ff77a7f8daf __scrt_common_main_seh
+[31] 7ff82f0a2774 BaseThreadInitThunk
+[32] 7ff831a20d51 RtlUserThreadStart
+Caused by: (AssetException) No such asset '/interface/windowconfig/craftingmechworkshop.config'
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ee42d3 Star::Assets::read
+[3] 7ff779ee434b Star::Assets::readJson
+[4] 7ff779ed964d <lambda_80e152f0e8987fd28e54fe8e75d4e933>::operator()
+[5] 7ff779ed1b2f std::_Invoker_functor::_Call<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[6] 7ff779ed45f6 std::invoke<<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[7] 7ff779ed25a0 std::_Invoke_ret<std::shared_ptr<Star::Assets::AssetData>,<lambda_80e152f0e8987fd28e54fe8e75d4e933> & __ptr64>
+[8] 7ff779eda286 std::_Func_impl<<lambda_80e152f0e8987fd28e54fe8e75d4e933>,std::allocator<int>,std::shared_ptr<Star::Assets::AssetData> >::_Do_call
+[9] 7ff77a27a337 std::_Func_class<std::shared_ptr<Star::DamageDatabase> >::operator()
+[10] 7ff779ee3d68 Star::Assets::processAssetData
+[11] 7ff779ee1e18 Star::Assets::loadJson
+[12] 7ff779ee111d Star::Assets::loadAsset
+[13] 7ff779ede32f Star::Assets::doLoad
+[14] 7ff779edfe1b Star::Assets::getAsset
+[15] 7ff779ee0dd2 Star::Assets::json
+[16] 7ff779edecae Star::Assets::fetchJson
+[17] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[18] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[19] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[20] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[21] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[22] 7ff779e0ce4f Star::ClientApplication::update
+[23] 7ff77a60aa72 Star::SdlPlatform::run
+[24] 7ff77a60ac2d Star::runMainApplication
+[25] 7ff779e0ff76 WinMain
+[26] 7ff77a7f8daf __scrt_common_main_seh
+[27] 7ff82f0a2774 BaseThreadInitThunk
+[28] 7ff831a20d51 RtlUserThreadStart
+[13:55:17.371] [Error] Exception caught in client main-loop
+(AssetException) Error loading asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff779edecae Star::Assets::fetchJson
+[6] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[7] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[8] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[9] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[10] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[11] 7ff779e0ce4f Star::ClientApplication::update
+[12] 7ff77a60aa72 Star::SdlPlatform::run
+[13] 7ff77a60ac2d Star::runMainApplication
+[14] 7ff779e0ff76 WinMain
+[15] 7ff77a7f8daf __scrt_common_main_seh
+[16] 7ff82f0a2774 BaseThreadInitThunk
+[17] 7ff831a20d51 RtlUserThreadStart
+[13:55:17.373] [Info] UniverseClient: Client disconnecting...
+[13:55:17.474] [Info] Client received world stop packet, leaving: Removed
+[13:55:17.787] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[13:55:17.787] [Info] UniverseServer: Stopping idle world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:55:18.248] [Info] UniverseServer: Stopping UniverseServer
+[13:55:33.747] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:56:36.855] [Info] UniverseServer: Acquiring universe lock file
+[13:56:36.862] [Info] UniverseServer: Loading settings
+[13:56:36.863] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:56:36.872] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:56:36.872] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:56:36.981] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:56:36.989] [Info] UniverseClient: Joined server as client 1
+[13:56:37.046] [Info] UniverseServer: Reviving player at ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:56:37.046] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:56:37.081] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:56:37.343] [Info] Protected dungeonIds for world set to (65524)
+[13:56:37.384] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:56:37.384] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:56:37.390] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:56:37.390] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:56:37.685] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1=1074.6.1024
+[13:56:39.610] [Error] Exception caught in client main-loop
+(AssetException) Error loading asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff779edecae Star::Assets::fetchJson
+[6] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[7] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[8] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[9] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[10] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[11] 7ff779e0ce4f Star::ClientApplication::update
+[12] 7ff77a60aa72 Star::SdlPlatform::run
+[13] 7ff77a60ac2d Star::runMainApplication
+[14] 7ff779e0ff76 WinMain
+[15] 7ff77a7f8daf __scrt_common_main_seh
+[16] 7ff82f0a2774 BaseThreadInitThunk
+[17] 7ff831a20d51 RtlUserThreadStart
+[13:56:39.612] [Info] UniverseClient: Client disconnecting...
+[13:56:39.650] [Info] Client received world stop packet, leaving: Removed
+[13:56:40.001] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[13:56:40.001] [Info] UniverseServer: Stopping idle world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:56:40.532] [Info] UniverseServer: Stopping UniverseServer
+[13:56:50.287] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:57:54.035] [Info] UniverseServer: Acquiring universe lock file
+[13:57:54.041] [Info] UniverseServer: Loading settings
+[13:57:54.043] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:57:54.053] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:57:54.053] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:57:54.168] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:57:54.177] [Info] UniverseClient: Joined server as client 1
+[13:57:54.234] [Info] UniverseServer: Reviving player at ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:57:54.234] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:57:54.268] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:57:54.542] [Info] Protected dungeonIds for world set to (65524)
+[13:57:54.579] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:57:54.580] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:57:54.585] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:57:54.586] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:57:54.871] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1=1074.6.1024
+[13:57:56.227] [Error] Exception caught in client main-loop
+(AssetException) Error loading asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff779edecae Star::Assets::fetchJson
+[6] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[7] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[8] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[9] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[10] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[11] 7ff779e0ce4f Star::ClientApplication::update
+[12] 7ff77a60aa72 Star::SdlPlatform::run
+[13] 7ff77a60ac2d Star::runMainApplication
+[14] 7ff779e0ff76 WinMain
+[15] 7ff77a7f8daf __scrt_common_main_seh
+[16] 7ff82f0a2774 BaseThreadInitThunk
+[17] 7ff831a20d51 RtlUserThreadStart
+[13:57:56.229] [Info] UniverseClient: Client disconnecting...
+[13:57:56.234] [Info] Client received world stop packet, leaving: Removed
+[13:57:56.590] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[13:57:56.590] [Info] UniverseServer: Stopping idle world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:57:57.132] [Info] UniverseServer: Stopping UniverseServer
+[13:58:01.523] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:58:34.337] [Info] UniverseServer: Acquiring universe lock file
+[13:58:34.344] [Info] UniverseServer: Loading settings
+[13:58:34.346] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[13:58:34.355] [Info] UniverseServer: Logged in player 'Mod' locally
+[13:58:34.355] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[13:58:34.469] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[13:58:34.478] [Info] UniverseClient: Joined server as client 1
+[13:58:34.536] [Info] UniverseServer: Reviving player at ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:58:34.536] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[13:58:34.568] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:58:34.838] [Info] Protected dungeonIds for world set to (65524)
+[13:58:34.879] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[13:58:34.879] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:58:34.885] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:58:34.885] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[13:58:35.173] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1=1074.6.1024
+[13:58:36.655] [Error] Exception caught in client main-loop
+(AssetException) Error loading asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff779edecae Star::Assets::fetchJson
+[6] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[7] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[8] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[9] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[10] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[11] 7ff779e0ce4f Star::ClientApplication::update
+[12] 7ff77a60aa72 Star::SdlPlatform::run
+[13] 7ff77a60ac2d Star::runMainApplication
+[14] 7ff779e0ff76 WinMain
+[15] 7ff77a7f8daf __scrt_common_main_seh
+[16] 7ff82f0a2774 BaseThreadInitThunk
+[17] 7ff831a20d51 RtlUserThreadStart
+[13:58:36.657] [Info] UniverseClient: Client disconnecting...
+[13:58:36.750] [Info] Client received world stop packet, leaving: Removed
+[13:58:37.096] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[13:58:37.097] [Info] UniverseServer: Stopping idle world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[13:58:37.518] [Info] UniverseServer: Stopping UniverseServer
+[13:58:39.355] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[14:02:12.122] [Info] UniverseServer: Acquiring universe lock file
+[14:02:12.129] [Info] UniverseServer: Loading settings
+[14:02:12.130] [Info] UniverseServer: Starting UniverseServer with UUID: b6496573caa554067aa6c9af08a3ee66
+[14:02:12.140] [Info] UniverseServer: Logged in player 'Mod' locally
+[14:02:12.140] [Info] UniverseServer: Logged in account '<anonymous>' as player 'Mod' from address local
+[14:02:12.265] [Info] UniverseServer: Loading system world (287038785, -979663305, -179254835) from disk storage
+[14:02:12.273] [Info] UniverseClient: Joined server as client 1
+[14:02:12.328] [Info] UniverseServer: Reviving player at ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[14:02:12.328] [Info] UniverseServer: Client 'Mod' <1> (local) connected
+[14:02:12.364] [Info] UniverseServer: Loading client ship world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[14:02:12.627] [Info] Protected dungeonIds for world set to (65524)
+[14:02:12.677] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 64
+[14:02:12.677] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[14:02:12.683] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[14:02:12.683] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
+[14:02:12.968] [Info] UniverseServer: Warping player 1 to ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1=1074.6.1024
+[14:02:14.388] [Error] Exception caught in client main-loop
+(AssetException) Error loading asset /interface/windowconfig/craftingmechworkshop.config
+[0] 7ff779ec7153 Star::captureStack
+[1] 7ff779ec5ede Star::StarException::StarException
+[2] 7ff779ed39fa Star::AssetException::format<Star::AssetPath>
+[3] 7ff779edfedb Star::Assets::getAsset
+[4] 7ff779ee0dd2 Star::Assets::json
+[5] 7ff779edecae Star::Assets::fetchJson
+[6] 7ff77a6d4457 Star::CraftingPane::CraftingPane
+[7] 7ff77a6fb858 std::make_shared<Star::CraftingPane,std::shared_ptr<Star::WorldClient>,std::shared_ptr<Star::Player>,Star::Json const & __ptr64,int & __ptr64>
+[8] 7ff77a7067a3 Star::MainInterface::openCraftingWindow
+[9] 7ff77a704fbb Star::MainInterface::handleInteractAction
+[10] 7ff779e0e6f8 Star::ClientApplication::updateRunning
+[11] 7ff779e0ce4f Star::ClientApplication::update
+[12] 7ff77a60aa72 Star::SdlPlatform::run
+[13] 7ff77a60ac2d Star::runMainApplication
+[14] 7ff779e0ff76 WinMain
+[15] 7ff77a7f8daf __scrt_common_main_seh
+[16] 7ff82f0a2774 BaseThreadInitThunk
+[17] 7ff831a20d51 RtlUserThreadStart
+[14:02:14.390] [Info] UniverseClient: Client disconnecting...
+[14:02:14.431] [Info] Client received world stop packet, leaving: Removed
+[14:02:14.797] [Info] UniverseServer: Client 'Mod' <1> (local) disconnected for reason: 
+[14:02:14.797] [Info] UniverseServer: Stopping idle world ClientShipWorld:77ef89ca5ab2ceeda637fd14d90c82d1
+[14:02:15.352] [Info] UniverseServer: Stopping UniverseServer
+[14:03:40.460] [Info] detected supported OpenGL texture size 16384, using atlasNumCells 128
