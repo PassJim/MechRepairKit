@@ -3,7 +3,7 @@
     { "item" : "money", "count" : 500 }
   ],
   "output" : {
-    "item" : "craftingmechworkshop",
+    "item" : "mechworkshop",
     "count" : 1
   },
   "groups" : [ "plain", "objects", "all", "tools" ]

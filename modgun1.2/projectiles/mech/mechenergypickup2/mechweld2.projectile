@@ -24,6 +24,6 @@
   "snapSpeed" : 150,
   "snapForce" : 250,
 
-  "restoreBase" : 60,
+  "restoreBase" : 120,
   "restorePercentage" : 0
 }

@@ -1,11 +1,11 @@
 {
   "itemName" : "mechtorch2",
-  "level" : 1,
+  "level" : 2,
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Repairs your mech2",
-  "shortdescription" : "Mech Welder2",
+  "description" : "Repairs your mech at the standard rate",
+  "shortdescription" : "Mech Welder",
   "tooltipKind" : "gun",
   "category" : "pistol",
   "twoHanded" : true,
@@ -47,7 +47,7 @@
 
     "fireTime" : 0.8250,
     "baseDps" : 0.25,
-    "energyUsage" : 20.0,
+    "energyUsage" : 35.0,
     "inaccuracy" : 0.00,
     "projectileCount" : 1,
     "fireType" : "auto",

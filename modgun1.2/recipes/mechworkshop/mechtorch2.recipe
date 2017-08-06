@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1700 },
+    { "item": "mechtorch","count" : 1}
+  ],
+  "output" : {
+    "item" : "mechtorch2",
+    "count" : 1
+  },
+  "groups" : [ "mechworkshop", "objects", "all", "tools" ]
+}

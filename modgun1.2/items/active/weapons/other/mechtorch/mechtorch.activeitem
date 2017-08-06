@@ -4,12 +4,12 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Repairs your mech",
-  "shortdescription" : "Mech Welder",
+  "description" : "Repairs your mech by a small amount",
+  "shortdescription" : "Portable Mech Torch",
   "tooltipKind" : "gun",
   "category" : "pistol",
   "twoHanded" : false,
-  "itemTags" : ["weapon","ranged","pistol","upgradeableWeapon"],
+  "itemTags" : ["weapon","ranged","pistol"],
 
   "inventoryIcon" : "mechtorch.png",
 
@@ -47,7 +47,7 @@
 
     "fireTime" : 0.8250,
     "baseDps" : 0.25,
-    "energyUsage" : 20.0,
+    "energyUsage" : 40.0,
     "inaccuracy" : 0.00,
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -86,13 +86,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
-
-  "upgradeParameters" : {
-    "inventoryIcon" : "gristlegun_l6.png",
-    "animationParts" : {
-      "middle" : "gristlegun_l6.png"
-    },
-    "shortdescription" : "Cartilage Gun ^yellow;^reset;"
-  }
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
