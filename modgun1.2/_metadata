@@ -1,6 +1,6 @@
 {
   "author" : "Pasjim",
-  "description" : "Repair gun, gives energy back to your vanilla mech at the cost of your own\n\nChange notes:\n1.1: reworked textures\n       changed crafting, now uses 1000 pixels\n       added animation for projectile\nPlans:\n - I plan to add higher tier versions of this that cost less energy and repair the mech for more\n\nshould there be any bugs with the mod please contact me on steam :)",
+  "description" : "Repair gun, gives energy back to your vanilla mech at the cost of your own\n\nChange notes:\n1.1: reworked textures\n       changed crafting, now uses 1000 pixels\n       added animation for projectile\n1.2: Added 2nd tier weapon\n       tweaked config files and renamed orignal torch\n       added crafting station, you now have to make that in order to get your tools \nPlans:\n - I plan to add higher tier versions of this that cost less energy and repair the mech for more\n\nshould there be any bugs with the mod please contact me on steam :)",
   "friendlyName" : "Mech Repair gun",
   "includes" : [],
   "link" : "steam://url/CommunityFilePage/980569484",
